@@ -1938,6 +1938,45 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-android33.0/android-arm": {
@@ -3876,6 +3915,45 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -5816,6 +5894,45 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-android33.0/android-x64": {
@@ -7754,6 +7871,45 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -9694,6 +9850,45 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-android33.0/ios-arm64": {
@@ -11632,6 +11827,45 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -13572,6 +13806,45 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-ios16.0": {
@@ -13771,6 +14044,45 @@
           "lib/net7.0-ios16.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -13972,6 +14284,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-ios16.0/android-arm64": {
@@ -14171,6 +14522,45 @@
           "lib/net7.0-ios16.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -14372,6 +14762,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-ios16.0/android-x86": {
@@ -14571,6 +15000,45 @@
           "lib/net7.0-ios16.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -14772,6 +15240,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-ios16.0/maccatalyst-x64": {
@@ -14971,6 +15478,45 @@
           "lib/net7.0-ios16.0/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -15172,6 +15718,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst15.4/android-arm": {
@@ -15371,6 +15956,45 @@
           "lib/net7.0-maccatalyst15.4/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -15572,6 +16196,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst15.4/android-x64": {
@@ -15771,6 +16434,45 @@
           "lib/net7.0-maccatalyst15.4/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     },
@@ -15972,6 +16674,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst15.4/ios-arm64": {
@@ -16172,6 +16913,45 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        }
       }
     },
     "net7.0-maccatalyst15.4/maccatalyst-x64": {
@@ -16371,6 +17151,45 @@
           "lib/net7.0-maccatalyst15.4/Microsoft.Maui.Graphics.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Calculator.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.DataTransferModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Abstractions.dll": {}
+        }
+      },
+      "Calculator.DataTransferModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Abstractions": "1.0.0",
+          "Calculator.DataTransferModels": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Services.dll": {}
         }
       }
     }
@@ -18754,10 +19573,26 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.6.4.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "Calculator.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Calculator.Abstractions/Calculator.Abstractions.csproj",
+      "msbuildProject": "../Calculator.Abstractions/Calculator.Abstractions.csproj"
+    },
+    "Calculator.DataTransferModels/1.0.0": {
+      "type": "project",
+      "path": "../Calculator.DataTransferModels/Calculator.DataTransferModels.csproj",
+      "msbuildProject": "../Calculator.DataTransferModels/Calculator.DataTransferModels.csproj"
+    },
+    "Calculator.Services/1.0.0": {
+      "type": "project",
+      "path": "../Calculator.Services/Calculator.Services.csproj",
+      "msbuildProject": "../Calculator.Services/Calculator.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
+      "Calculator.Services >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.1.0-preview1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -18778,6 +19613,7 @@
       "Xamarin.Google.Crypto.Tink.Android >= 1.7.0"
     ],
     "net7.0-ios16.0": [
+      "Calculator.Services >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.1.0-preview1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -18787,6 +19623,7 @@
       "Microsoft.Maui.Graphics >= 7.0.49"
     ],
     "net7.0-maccatalyst15.4": [
+      "Calculator.Services >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.1.0-preview1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
@@ -18824,15 +19661,27 @@
       "frameworks": {
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
+            }
+          }
         },
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
+            }
+          }
         },
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,10 +1,20 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Calculator.Abstractions.Services;
+using Calculator.Services;
+using Calculator.DataTransferModels.Loan;
 
 namespace LoanCalculator.ViewModels
 {
 	public partial class MainViewModel : ObservableObject
-	{
+    {
+        private readonly ILoanService _loanService;
+
+        public MainViewModel(ILoanService loanService)
+        {
+            _loanService = loanService;
+        }
+
         [ObservableProperty]
         double monthlyPayment;
 
@@ -32,10 +42,20 @@ namespace LoanCalculator.ViewModels
         [RelayCommand]
 		void CalculateLoan()
 		{
-            MonthlyPayment = 101;
-            MonthlyInterest = 102;
-            TotalInterest = 103;
-            TotalAmount = 104;
+            var loanDto = new LoanDto()
+            {
+                Principal = Amount,
+                Rate = rate,
+                Years = years,
+                Months = months
+            };
+
+            var response = _loanService.CalculateLoan(loanDto);
+
+            MonthlyPayment = response.MonthlyPayment;
+            MonthlyInterest = response.MonthlyInterest;
+            TotalInterest = response.TotalInterest;
+            TotalAmount = response.TotalAmount;
         }
 	}
 }

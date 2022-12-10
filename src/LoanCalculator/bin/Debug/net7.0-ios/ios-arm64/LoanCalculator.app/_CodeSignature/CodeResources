@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		vNW6Fby1zCtm/hoFCvm995D00ys=
+		</data>
 		<key>AboutAssets.txt</key>
 		<data>
 		pcNU0lDArxK2L9RzLvQgOLn2RC8=
@@ -11,6 +15,30 @@
 		<key>Assets.car</key>
 		<data>
 		+MWqS/uVIuLzImZUDQr9ypzkR+o=
+		</data>
+		<key>Calculator.Abstractions.dll</key>
+		<data>
+		b/QgxWbCBDyYdfXBcyUj15P0T5A=
+		</data>
+		<key>Calculator.Abstractions.pdb</key>
+		<data>
+		odDAX/h6dbg+vuf4a5+qoUGfHV4=
+		</data>
+		<key>Calculator.DataTransferModels.dll</key>
+		<data>
+		47Tbqtzf9FRvK4R26deYg2Ks/y4=
+		</data>
+		<key>Calculator.DataTransferModels.pdb</key>
+		<data>
+		apPrmtt9qBz4AezyQra2aLEt36Q=
+		</data>
+		<key>Calculator.Services.dll</key>
+		<data>
+		U6J/W/zUqg9oTnoCOz+go9D6LkU=
+		</data>
+		<key>Calculator.Services.pdb</key>
+		<data>
+		pJ/fzmBGjKes/SElnNKXOEQJcs0=
 		</data>
 		<key>CommunityToolkit.Mvvm.dll</key>
 		<data>
@@ -26,11 +54,11 @@
 		</data>
 		<key>LoanCalculator.dll</key>
 		<data>
-		WC8JzVN14XSfHS5UrzYUsWh/qvE=
+		5HXW+F5GytqsythaYe36IlG1wew=
 		</data>
 		<key>LoanCalculator.pdb</key>
 		<data>
-		dzX3yb8ChZPLI4r/LV/xungcTiE=
+		sspAnSfisiFXEBYns/KXaV3k+ME=
 		</data>
 		<key>MauiInfo.plist</key>
 		<data>
@@ -861,6 +889,48 @@
 			7LPFzFrZkdOPiailuFXUra1sT1sdmQt29TgxvKpAzLM=
 			</data>
 		</dict>
+		<key>Calculator.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zEPq2HS0+tZAeqSQ9jJKybMNU1fAfgrmh18rMvbnXUA=
+			</data>
+		</dict>
+		<key>Calculator.Abstractions.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QiYCVABQ4+7eU7Infg17spJ72+Yg40RdaedShkv3uMw=
+			</data>
+		</dict>
+		<key>Calculator.DataTransferModels.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vjd5ZL26Dh+WJ9O2jp21EJEIL5S/ae9i6GK1MLSfrqI=
+			</data>
+		</dict>
+		<key>Calculator.DataTransferModels.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GkH5eNpa6sU07ZGoZBQPB/t2L9vc2x1qGnIWx+t9aJU=
+			</data>
+		</dict>
+		<key>Calculator.Services.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iJLJar4R4rSKvHAib8d+s8J44RaHaO5QGQHn/lY9V+s=
+			</data>
+		</dict>
+		<key>Calculator.Services.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4BZ9JOhk6aLSgzuA0gf0UOH86arKCD16WAzVFDufP0k=
+			</data>
+		</dict>
 		<key>CommunityToolkit.Mvvm.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -879,14 +949,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FC9apWHi6FLm6rM4xfy5Z7Kb52lteIah02nWcjoX2Oo=
+			C5sdNM9mblhEuk8LgZQb4xY5KR51BVrl8z4u7yeTPJk=
 			</data>
 		</dict>
 		<key>LoanCalculator.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hph4iSHJd2vasI0Cu0ws8qRMQGp28rfYnL5O6Sx3e0s=
+			SQxy5+R2g3TsUriYBFe6d67vwLoGxwoHnqS+4mFgquk=
 			</data>
 		</dict>
 		<key>MauiInfo.plist</key>

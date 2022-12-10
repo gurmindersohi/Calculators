@@ -69,4 +69,7 @@
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Calculator.Services\Calculator.Services.csproj" />
+	</ItemGroup>
 </Project>
