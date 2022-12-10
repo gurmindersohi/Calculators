@@ -1962,6 +1962,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3938,6 +3953,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -5918,6 +5948,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -7894,6 +7939,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -9874,6 +9934,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -11850,6 +11925,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -13830,6 +13920,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -14067,6 +14172,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -14308,6 +14428,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -14545,6 +14680,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -14786,6 +14936,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -15023,6 +15188,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -15264,6 +15444,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -15501,6 +15696,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -15742,6 +15952,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -15979,6 +16204,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -16220,6 +16460,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -16457,6 +16712,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -16698,6 +16968,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -16937,6 +17222,21 @@
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
         }
       },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        }
+      },
       "Calculator.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -17174,6 +17474,21 @@
         },
         "runtime": {
           "bin/placeholder/Calculator.DataTransferModels.dll": {}
+        }
+      },
+      "Calculator.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Calculator.Services": "1.0.0",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Calculator.Infrastructure.dll": {}
         }
       },
       "Calculator.Services/1.0.0": {
@@ -19584,6 +19899,11 @@
       "path": "../Calculator.DataTransferModels/Calculator.DataTransferModels.csproj",
       "msbuildProject": "../Calculator.DataTransferModels/Calculator.DataTransferModels.csproj"
     },
+    "Calculator.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Calculator.Infrastructure/Calculator.Infrastructure.csproj",
+      "msbuildProject": "../Calculator.Infrastructure/Calculator.Infrastructure.csproj"
+    },
     "Calculator.Services/1.0.0": {
       "type": "project",
       "path": "../Calculator.Services/Calculator.Services.csproj",
@@ -19592,6 +19912,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0-android33.0": [
+      "Calculator.Infrastructure >= 1.0.0",
       "Calculator.Services >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.1.0-preview1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
@@ -19613,6 +19934,7 @@
       "Xamarin.Google.Crypto.Tink.Android >= 1.7.0"
     ],
     "net7.0-ios16.0": [
+      "Calculator.Infrastructure >= 1.0.0",
       "Calculator.Services >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.1.0-preview1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
@@ -19623,6 +19945,7 @@
       "Microsoft.Maui.Graphics >= 7.0.49"
     ],
     "net7.0-maccatalyst15.4": [
+      "Calculator.Infrastructure >= 1.0.0",
       "Calculator.Services >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.1.0-preview1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
@@ -19662,6 +19985,9 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
+            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
+              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
+            },
             "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
               "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
             }
@@ -19670,6 +19996,9 @@
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {
+            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
+              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
+            },
             "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
               "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
             }
@@ -19678,6 +20007,9 @@
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
           "projectReferences": {
+            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
+              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
+            },
             "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
               "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
             }

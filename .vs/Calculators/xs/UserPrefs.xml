@@ -1,6 +1,6 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{BD09024B-CDD0-432E-A042-A9E2AC45B26E}|Default">
-  <MonoDevelop.Ide.ItemProperties.Calculator.DataTransferModels FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.ItemProperties.Calculator.Infrastructure FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/Platforms/iOS/Info.plist">
     <Files>
       <File FileName="src/LoanCalculator/MainPage.xaml.cs" Line="5" Column="2" />
@@ -26,10 +26,8 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Calculator.Abstractions FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Calculator.Services FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.LoanCalculator PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-000A4991018A801E" />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-000A4991018A801E" />
 </Properties>

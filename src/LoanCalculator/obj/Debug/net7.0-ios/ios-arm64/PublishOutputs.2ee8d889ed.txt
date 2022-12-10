@@ -12,6 +12,7 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Microsoft.Maui.Graphics.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.Abstractions.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.DataTransferModels.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.Infrastructure.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.Services.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/LoanCalculator.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Microsoft.CSharp.dll
@@ -190,6 +191,7 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Microsoft.Maui.Essentials.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/LoanCalculator.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.Services.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.Infrastructure.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.Abstractions.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/Calculator.DataTransferModels.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/publish/../LoanCalculator.app/System.Private.CoreLib.aotdata.arm64

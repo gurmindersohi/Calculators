@@ -61,15 +61,18 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Images\dotnet_bot.svg" />
+	  <BundleResource Include="Resources\.DS_Store" />
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="ViewModels\" />
 	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Resources\.DS_Store" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Calculator.Services\Calculator.Services.csproj" />
+	  <ProjectReference Include="..\Calculator.Infrastructure\Calculator.Infrastructure.csproj" />
 	</ItemGroup>
 </Project>

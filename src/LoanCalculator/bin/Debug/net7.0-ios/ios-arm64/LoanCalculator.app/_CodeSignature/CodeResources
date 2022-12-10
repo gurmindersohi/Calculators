@@ -32,6 +32,14 @@
 		<data>
 		apPrmtt9qBz4AezyQra2aLEt36Q=
 		</data>
+		<key>Calculator.Infrastructure.dll</key>
+		<data>
+		jAm2cIAVKopLLlDbkCfL6xSVbY4=
+		</data>
+		<key>Calculator.Infrastructure.pdb</key>
+		<data>
+		gfdTNGT3QyecQBmlq1C8j/PcJ9s=
+		</data>
 		<key>Calculator.Services.dll</key>
 		<data>
 		U6J/W/zUqg9oTnoCOz+go9D6LkU=
@@ -54,11 +62,11 @@
 		</data>
 		<key>LoanCalculator.dll</key>
 		<data>
-		5HXW+F5GytqsythaYe36IlG1wew=
+		tD/jXJf8MTMexgA/hXKS5J5I/3U=
 		</data>
 		<key>LoanCalculator.pdb</key>
 		<data>
-		sspAnSfisiFXEBYns/KXaV3k+ME=
+		PiZ6oBCbB+RXGswSrrMh52OuC60=
 		</data>
 		<key>MauiInfo.plist</key>
 		<data>
@@ -917,6 +925,20 @@
 			GkH5eNpa6sU07ZGoZBQPB/t2L9vc2x1qGnIWx+t9aJU=
 			</data>
 		</dict>
+		<key>Calculator.Infrastructure.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QJ1jjBSzmKwibwdkkVfBugbukC4nKmZ0GpMTl6EI+ng=
+			</data>
+		</dict>
+		<key>Calculator.Infrastructure.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VvVuxsXsGaUtg0TwLQ6oCegbxV3iZdkCsWbnwrhTPdE=
+			</data>
+		</dict>
 		<key>Calculator.Services.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -949,14 +971,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C5sdNM9mblhEuk8LgZQb4xY5KR51BVrl8z4u7yeTPJk=
+			aCa05CK2HCcyn06/LfEokAzcSnqCbyoxEx3YAM07i0U=
 			</data>
 		</dict>
 		<key>LoanCalculator.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SQxy5+R2g3TsUriYBFe6d67vwLoGxwoHnqS+4mFgquk=
+			VsA0RTgZckOd7Ap0AQBHKzHg49yO1RIMRAvKdSOvwQI=
 			</data>
 		</dict>
 		<key>MauiInfo.plist</key>

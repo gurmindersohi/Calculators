@@ -2,6 +2,7 @@
 using LoanCalculator.ViewModels;
 using Calculator.Abstractions.Services;
 using Calculator.Services;
+using Calculator.Infrastructure;
 
 namespace LoanCalculator;
 
@@ -24,7 +25,7 @@ public static class MauiProgram
 
 		builder.Services.AddSingleton<MainPage>();
         builder.Services.AddSingleton<MainViewModel>();
-        builder.Services.AddSingleton(typeof(ILoanService), typeof(LoanService));
+        builder.Services.AddCalculatorServices();
 
         return builder.Build();
 	}
