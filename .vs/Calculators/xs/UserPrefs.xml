@@ -1,4 +1,5 @@
-﻿<Properties StartupConfiguration="{BD09024B-CDD0-432E-A042-A9E2AC45B26E}|Default">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{BD09024B-CDD0-432E-A042-A9E2AC45B26E}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/Platforms/iOS/Info.plist">
     <Files>
       <File FileName="src/LoanCalculator/MainPage.xaml.cs" Line="5" Column="2" />
@@ -23,12 +24,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-000A4991018A801E" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.LoanCalculator PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-000A4991018A801E" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.LoanCalculator PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4ACDB71A-6FEA-4D99-83E2-79A1A7BF3207" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-000A4991018A801E" />
 </Properties>

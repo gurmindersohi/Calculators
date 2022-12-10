@@ -1,4 +1,5 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/iossimulator-x64/publish/../LoanCalculator.app/icudt.dat
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/iossimulator-x64/publish/../LoanCalculator.app/CommunityToolkit.Mvvm.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/iossimulator-x64/publish/../LoanCalculator.app/Microsoft.Extensions.Configuration.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/iossimulator-x64/publish/../LoanCalculator.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/iossimulator-x64/publish/../LoanCalculator.app/Microsoft.Extensions.DependencyInjection.dll

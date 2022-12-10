@@ -1,40 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoanCalculator.MainPage">
+             x:Class="LoanCalculator.MainPage"
+             xmlns:viewmodel="clr-namespace:LoanCalculator.ViewModels"
+             x:DataType="viewmodel:MainViewModel">
     
     <Grid RowDefinitions="10, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
           ColumnDefinitions="1*, .5*, .5*, .5*, .5*"
           Padding="20"
           RowSpacing="10"
           ColumnSpacing="10">
-
+        
+        <!--Input Parameteres-->
         <Label Text="Amount" Grid.Row="1" FontSize="Large" VerticalTextAlignment="Center" />
-        <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium" Keyboard="Numeric"/>
+        <Entry Text="{Binding Amount}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium" Keyboard="Numeric"/>
         
         <Label Text="Rate" Grid.Row="2" FontSize="Large" VerticalTextAlignment="Center" />
-        <Entry Grid.Row="2" Grid.Column="1" FontSize="Medium" Grid.ColumnSpan="2" Keyboard="Numeric"/>
+        <Entry Text="{Binding Rate}" Grid.Row="2" Grid.Column="1" FontSize="Medium" Grid.ColumnSpan="2" Keyboard="Numeric"/>
         <Label Text="% per year" Grid.Row="2" Grid.Column="3" FontSize="Small" Grid.ColumnSpan="2" VerticalTextAlignment="Center" />
         
         <Label Text="Loan Term" Grid.Row="3" FontSize="Large" VerticalTextAlignment="Center" />
-        <Entry Grid.Row="3" Grid.Column="1" FontSize="Medium" Keyboard="Numeric"/>
+        <Entry Text="{Binding Years}" Grid.Row="3" Grid.Column="1" FontSize="Medium" Keyboard="Numeric"/>
         <Label Text="Years" Grid.Row="3" Grid.Column="2" FontSize="Small" VerticalTextAlignment="Center" />
-        <Entry Grid.Row="3" Grid.Column="3" FontSize="Medium" Keyboard="Numeric" />
+        <Entry Text="{Binding Months}" Grid.Row="3" Grid.Column="3" FontSize="Medium" Keyboard="Numeric" />
         <Label Text="Months" Grid.Row="3" Grid.Column="4" FontSize="Small" VerticalTextAlignment="Center" />
 
+        <Button Text="Calculate" Command="{Binding CalculateLoanCommand}" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2"></Button>
+
+        <!--Seperator-->
         <Line X2="400" Stroke="black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5"></Line>
         
+        <!--Output Parameteres-->
         <Label Text="Monthly Payment:" Grid.Row="6" FontSize="Medium" Grid.ColumnSpan="2" />
-        <Label Text="$1347.13" Grid.Row="6" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
+        <Label Text="{Binding MonthlyPayment}" Grid.Row="6" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
         
         <Label Text="Monthly Interest:" Grid.Row="7" FontSize="Medium" Grid.ColumnSpan="3" />
-        <Label Text="$513.80" Grid.Row="7" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
+        <Label Text="{Binding MonthlyInterest}" Grid.Row="7" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
         
         <Label Text="Total Interest:" Grid.Row="8" FontSize="Medium" Grid.ColumnSpan="3" />
-        <Label Text="$184,968.26" Grid.Row="8" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
+        <Label Text="{Binding TotalInterest}" Grid.Row="8" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
 
         <Label Text="Total Amount:" Grid.Row="9" FontSize="Medium" Grid.ColumnSpan="3" />
-        <Label Text="$484,968.26" Grid.Row="9" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3"/>
+        <Label Text="{Binding TotalAmount}" Grid.Row="9" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3"/>
     </Grid>
 
 </ContentPage>

@@ -261,3 +261,4 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/obj/Debug/net7.0-ios/ios-arm64/LoanCalculator.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/obj/Debug/net7.0-ios/ios-arm64/LoanCalculator.genruntimeconfig.cache
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/obj/Debug/net7.0-ios/ios-arm64/ref/LoanCalculator.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-ios/ios-arm64/CommunityToolkit.Mvvm.dll

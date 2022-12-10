@@ -12,6 +12,10 @@
 		<data>
 		+MWqS/uVIuLzImZUDQr9ypzkR+o=
 		</data>
+		<key>CommunityToolkit.Mvvm.dll</key>
+		<data>
+		eqGs3OsWwWeiClsnS0vqw5ho9gQ=
+		</data>
 		<key>Images/dotnet_bot.svg</key>
 		<data>
 		EZdSFOJpkM15dhK0Fj0rbV7d/nY=
@@ -22,11 +26,11 @@
 		</data>
 		<key>LoanCalculator.dll</key>
 		<data>
-		8ZH4Rs8idj3+evom6CMOGPR/sas=
+		WC8JzVN14XSfHS5UrzYUsWh/qvE=
 		</data>
 		<key>LoanCalculator.pdb</key>
 		<data>
-		Hi9xozglT2Uz1UE8Np8psPWUuZw=
+		dzX3yb8ChZPLI4r/LV/xungcTiE=
 		</data>
 		<key>MauiInfo.plist</key>
 		<data>
@@ -857,6 +861,13 @@
 			7LPFzFrZkdOPiailuFXUra1sT1sdmQt29TgxvKpAzLM=
 			</data>
 		</dict>
+		<key>CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BgHnScoc+navvhdymxwGZ76ti4whX5di8HEOIJmzjVg=
+			</data>
+		</dict>
 		<key>Images/dotnet_bot.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -868,14 +879,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9uJl85QnPdKJLPOpT6UpDHJC8hY8F2+oFbBz88v+Kjk=
+			FC9apWHi6FLm6rM4xfy5Z7Kb52lteIah02nWcjoX2Oo=
 			</data>
 		</dict>
 		<key>LoanCalculator.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B6fgXfreECl6kpKjtwnGOgL73BhtTXwTEWXKshdYzDE=
+			hph4iSHJd2vasI0Cu0ws8qRMQGp28rfYnL5O6Sx3e0s=
 			</data>
 		</dict>
 		<key>MauiInfo.plist</key>

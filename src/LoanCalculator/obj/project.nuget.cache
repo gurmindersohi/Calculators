@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9JuOLx+OSvs38hQBSbfhweSCb0JX+oebR/bwwQBrmsJhHDyp2BB+/YFIJVsPIK2VrtyZfkGhq5+5SfltO8cFkg==",
+  "dgSpecHash": "vYK2M/Cyc8ZUvFoZjWYfeZNeknoEWZLy50eRDVsUixwlWGtp5YpvMCo0ZckeH5IC7TFMxJDIVLyq6tG/gx9tpg==",
   "success": true,
   "projectFilePath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/LoanCalculator.csproj",
   "expectedPackageFiles": [
+    "/Users/gurmindersingh/.nuget/packages/communitytoolkit.mvvm/8.1.0-preview1/communitytoolkit.mvvm.8.1.0-preview1.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/googlegson/2.9.1/googlegson.2.9.1.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "/Users/gurmindersingh/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

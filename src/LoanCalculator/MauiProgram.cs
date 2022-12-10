@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using LoanCalculator.ViewModels;
 
 namespace LoanCalculator;
 
@@ -19,7 +20,10 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+		builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<MainViewModel>();
+
+        return builder.Build();
 	}
 }
 
