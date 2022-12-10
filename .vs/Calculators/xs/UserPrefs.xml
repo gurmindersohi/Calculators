@@ -1,16 +1,20 @@
 ﻿<Properties StartupConfiguration="{BD09024B-CDD0-432E-A042-A9E2AC45B26E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../usr/local/share/dotnet/packs/Microsoft.iOS.Sdk/16.0.1478/tools/msbuild/iOS/Xamarin.Shared.targets">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/Platforms/iOS/Info.plist">
     <Files>
       <File FileName="src/LoanCalculator/MainPage.xaml.cs" Line="5" Column="2" />
-      <File FileName="src/LoanCalculator/AppShell.xaml" Line="8" Column="35" />
-      <File FileName="../../../../../../usr/local/share/dotnet/packs/Microsoft.iOS.Sdk/16.0.1478/tools/msbuild/iOS/Xamarin.Shared.targets" Line="1721" Column="59" />
-      <File FileName="src/LoanCalculator/MainPage.xaml" Line="23" Column="48" />
+      <File FileName="src/LoanCalculator/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="../../../../../../usr/local/share/dotnet/packs/Microsoft.iOS.Sdk/16.0.1478/tools/msbuild/iOS/Xamarin.Shared.targets" Line="1706" Column="3" />
+      <File FileName="src/LoanCalculator/MainPage.xaml" Line="22" Column="84" />
+      <File FileName="src/LoanCalculator/Platforms/iOS/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Calculators" expanded="True">
             <Node name="LoanCalculator" expanded="True" selected="True">
+              <Node name="Platforms" expanded="True">
+                <Node name="iOS" expanded="True" />
+              </Node>
               <Node name="AppShell.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
             </Node>

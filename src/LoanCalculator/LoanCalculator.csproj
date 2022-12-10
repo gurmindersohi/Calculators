@@ -15,7 +15,7 @@
 		<ApplicationTitle>LoanCalculator</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.sohi.loancalculator</ApplicationId>
+		<ApplicationId>com.sohi.LoanCalculator</ApplicationId>
 		<ApplicationIdGuid>237d5c89-83b5-40ff-8587-57753c7302e3</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -33,6 +33,9 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	  <CodesignKey>Apple Development: gurmindersohi@icloud.com (VL494QP7BH)</CodesignKey>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
