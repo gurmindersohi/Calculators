@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{BD09024B-CDD0-432E-A042-A9E2AC45B26E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/MainPage.xaml.cs">
+    <Files>
+      <File FileName="src/LoanCalculator/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="src/LoanCalculator/MainPage.xaml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Calculators" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.ItemProperties.LoanCalculator FirstBuild="True" PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MultiItemStartupConfigurations />
+</Properties>
