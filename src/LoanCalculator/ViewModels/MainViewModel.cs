@@ -75,10 +75,10 @@ namespace LoanCalculator.ViewModels
 
             var response = _loanService.CalculateLoan(loanDto);
 
-            MonthlyPayment = Convert.ToString(response.MonthlyPayment);
-            MonthlyInterest = Convert.ToString(response.MonthlyInterest);
-            TotalInterest = Convert.ToString(response.TotalInterest);
-            TotalAmount = Convert.ToString(response.TotalAmount);
+            MonthlyPayment = String.Format("${0:n2}", response.MonthlyPayment);
+            MonthlyInterest = String.Format("${0:n2}", response.MonthlyInterest);
+            TotalInterest = String.Format("${0:n2}", response.TotalInterest);
+            TotalAmount = String.Format("${0:n2}", response.TotalAmount);
         }
 	}
 }

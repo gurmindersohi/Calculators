@@ -1,19 +1,37 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{BD09024B-CDD0-432E-A042-A9E2AC45B26E}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/ViewModels/MainViewModel.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/MainPage.xaml">
     <Files>
-      <File FileName="src/LoanCalculator/ViewModels/MainViewModel.cs" Line="23" Column="1" />
+      <File FileName="src/LoanCalculator/MainPage.xaml" Line="29" Column="111" />
+      <File FileName="src/LoanCalculator/ViewModels/MainViewModel.cs" Line="21" Column="29" />
+      <File FileName="src/Calculator.DataTransferModels/Loan/LoanDto.cs" Line="12" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Calculators" expanded="True" />
+          <Node name="Calculators" expanded="True">
+            <Node name="Calculator.DataTransferModels" expanded="True">
+              <Node name="Loan" expanded="True" />
+            </Node>
+            <Node name="LoanCalculator" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Calculators" expanded="True">
+            <Node name="Calculator.Services.Tests" selected="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Calculator.Services.Tests FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.LoanCalculator PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-000A4991018A801E" />

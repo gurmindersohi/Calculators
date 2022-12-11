@@ -29,16 +29,16 @@
         <Line X2="{Binding LineWidth}" Stroke="black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5"></Line>
         
         <Label Text="Monthly Payment:" Grid.Row="6" FontSize="Medium" Grid.ColumnSpan="2" />
-        <Label Text="{Binding MonthlyPayment}" Grid.Row="6" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
+        <Label Text="{Binding MonthlyPayment}" Grid.Row="6" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
         
         <Label Text="Monthly Interest:" Grid.Row="7" FontSize="Medium" Grid.ColumnSpan="3" />
-        <Label Text="{Binding MonthlyInterest}" Grid.Row="7" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
+        <Label Text="{Binding MonthlyInterest}" Grid.Row="7" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
         
         <Label Text="Total Interest:" Grid.Row="8" FontSize="Medium" Grid.ColumnSpan="3" />
-        <Label Text="{Binding TotalInterest}" Grid.Row="8" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
+        <Label Text="{Binding TotalInterest}" Grid.Row="8" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
 
         <Label Text="Total Amount:" Grid.Row="9" FontSize="Medium" Grid.ColumnSpan="3" />
-        <Label Text="{Binding TotalAmount}" Grid.Row="9" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3"/>
+        <Label Text="{Binding TotalAmount}" Grid.Row="9" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
     </Grid>
 
 </ContentPage>
