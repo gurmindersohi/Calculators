@@ -69,8 +69,8 @@ namespace LoanCalculator.ViewModels
             {
                 Principal = Convert.ToDouble(Amount),
                 Rate = Convert.ToDouble(rate),
-                Years = Convert.ToInt32(years),
-                Months = Convert.ToInt32(months)
+                Years = Convert.ToDouble(years),
+                Months = Convert.ToDouble(months)
             };
 
             var response = _loanService.CalculateLoan(loanDto);

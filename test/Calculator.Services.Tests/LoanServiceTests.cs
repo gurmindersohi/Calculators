@@ -23,14 +23,16 @@ namespace Calculator.Services.Tests
         [Theory]
         [InlineData(1000, 10, 2, 0, 46.14, 4.48, 107.48, 1107.48)]
         [InlineData(1000, 0, 2, 0, 41.67, 0, 0, 1000)]
+        [InlineData(1000, 10, 2, 6, 37.81, 4.48, 134.34, 1134.34)]
+        [InlineData(1000, 10, 2.5, 0, 37.81, 4.48, 134.34, 1134.34)]
         [InlineData(300000, 3.5, 30, 0, 1347.13, 513.80, 184968.26, 484968.26)]
         [InlineData(750000, 5.99, 30, 1, 4487.35, 2409.79, 869935.0, 1619935.0)]
         [InlineData(999797, 5.89, 25, 0, 6374.65, 3041.99, 912597.0, 1912394.0)]
         [InlineData(1800000, 6.49, 25, 6, 12047.61, 6165.25, 1886567.47, 3686567.47)]
         public void CalculateLoan_ValidInput_ShouldSucceed(double principal,
              float rate,
-             int years,
-             int months,
+             double years,
+             double months,
              double expectedMonthlyPayment,
              double expectedMonthlyInterest,
              double expectedTotalInterest,

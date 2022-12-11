@@ -29,15 +29,15 @@ namespace Calculator.DataTransferModels.Loan
         // Gets or Sets the total years.
         // </summary>
         [Required]
-        [Range(0, int.MaxValue)]
-        public int Years { get; set; }
+        [Range(0, double.MaxValue)]
+        public double Years { get; set; }
 
         // <summary>
         // Gets or Sets the total months.
         // </summary>
         [Required]
-        [Range(0, int.MaxValue)]
-        public int Months { get; set; }
+        [Range(0, double.MaxValue)]
+        public double Months { get; set; }
     }
 }
 

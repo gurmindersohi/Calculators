@@ -62,9 +62,9 @@ namespace Calculator.Services
             return monthlyInterest;
         }
 
-        private static int TotalMonths(int year, int months)
+        private static int TotalMonths(double year, double months)
         {
-            return months + (year * 12);
+            return (int)months + (int)(year * 12);
         }
     }
 }
