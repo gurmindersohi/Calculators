@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Calculator.DataTransferModels/1.0.0": {
+        "runtime": {
+          "Calculator.DataTransferModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Calculator.DataTransferModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
