@@ -13,7 +13,7 @@
         
         <!--Input Parameteres-->
         <Label Text="Amount" Grid.Row="1" FontSize="Large" VerticalTextAlignment="Center" />
-        <Entry Text="{Binding Amount}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium" Keyboard="Numeric"/>
+        <Entry IsTextPredictionEnabled="False" Text="{Binding Amount}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium" Keyboard="Numeric"/>
         
         <Label Text="Rate" Grid.Row="2" FontSize="Large" VerticalTextAlignment="Center" />
         <Entry Text="{Binding Rate}" Grid.Row="2" Grid.Column="1" FontSize="Medium" Grid.ColumnSpan="2" Keyboard="Numeric"/>

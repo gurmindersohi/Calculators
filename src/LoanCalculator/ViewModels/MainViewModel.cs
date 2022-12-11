@@ -16,46 +16,66 @@ namespace LoanCalculator.ViewModels
         }
 
         [ObservableProperty]
-        double monthlyPayment;
+        string monthlyPayment = "-";
 
         [ObservableProperty]
-        double monthlyInterest;
+        string monthlyInterest = "-";
 
         [ObservableProperty]
-        double totalInterest;
+        string totalInterest = "-";
 
         [ObservableProperty]
-        double totalAmount;
+        string totalAmount = "-";
 
         [ObservableProperty]
-        double amount;
+        string amount;
 
         [ObservableProperty]
-        double rate;
+        string rate;
 
         [ObservableProperty]
-        int years;
+        string years;
 
         [ObservableProperty]
-        int months;
+        string months;
 
         [RelayCommand]
 		void CalculateLoan()
-		{
+        {
+            if (string.IsNullOrWhiteSpace(amount))
+            {
+                amount = "0";
+            }
+
+            if (string.IsNullOrWhiteSpace(rate))
+            {
+                rate = "0";
+            }
+
+            if (string.IsNullOrWhiteSpace(years))
+            {
+                years = "0";
+            }
+
+            if (string.IsNullOrWhiteSpace(months))
+            {
+                months = "0";
+            }
+
             var loanDto = new LoanDto()
             {
-                Principal = Amount,
-                Rate = rate,
-                Years = years,
-                Months = months
+                Principal = Convert.ToDouble(Amount),
+                Rate = Convert.ToDouble(rate),
+                Years = Convert.ToInt32(years),
+                Months = Convert.ToInt32(months)
             };
 
             var response = _loanService.CalculateLoan(loanDto);
 
-            MonthlyPayment = response.MonthlyPayment;
-            MonthlyInterest = response.MonthlyInterest;
-            TotalInterest = response.TotalInterest;
-            TotalAmount = response.TotalAmount;
+            MonthlyPayment = Convert.ToString(response.MonthlyPayment);
+            MonthlyInterest = Convert.ToString(response.MonthlyInterest);
+            TotalInterest = Convert.ToString(response.TotalInterest);
+            TotalAmount = Convert.ToString(response.TotalAmount);
         }
 	}
 }

@@ -1,31 +1,19 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{BD09024B-CDD0-432E-A042-A9E2AC45B26E}|Default">
   <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.ItemProperties.Calculator.Infrastructure FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/Platforms/iOS/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/LoanCalculator/ViewModels/MainViewModel.cs">
     <Files>
-      <File FileName="src/LoanCalculator/MainPage.xaml.cs" Line="5" Column="2" />
-      <File FileName="src/LoanCalculator/AppShell.xaml" Line="1" Column="1" />
-      <File FileName="../../../../../../usr/local/share/dotnet/packs/Microsoft.iOS.Sdk/16.0.1478/tools/msbuild/iOS/Xamarin.Shared.targets" Line="1706" Column="3" />
-      <File FileName="src/LoanCalculator/MainPage.xaml" Line="22" Column="84" />
-      <File FileName="src/LoanCalculator/Platforms/iOS/Info.plist" />
+      <File FileName="src/LoanCalculator/ViewModels/MainViewModel.cs" Line="23" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Calculators" expanded="True">
-            <Node name="LoanCalculator" expanded="True" selected="True">
-              <Node name="Platforms" expanded="True">
-                <Node name="iOS" expanded="True" />
-              </Node>
-              <Node name="AppShell.xaml" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="Calculators" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Calculator.Services.Tests FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.LoanCalculator PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008110-000A4991018A801E" />
