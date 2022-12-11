@@ -37,6 +37,11 @@ namespace Calculator.Services
 
         private static double CalculateMonthlyPayment(double principal, int months, double rate)
         {
+            if (rate == 0)
+            {
+                return principal / months;
+            }
+
             var monthlyRate = (rate / 100) / 12;
             return monthlyRate / (1 - Math.Pow((1 + monthlyRate), -(months))) * principal;
         }
