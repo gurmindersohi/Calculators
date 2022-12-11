@@ -9966,7 +9966,7 @@
         }
       }
     },
-    "net7.0-android33.0/ios-arm64": {
+    "net7.0-android33.0/iossimulator-x64": {
       "CommunityToolkit.Mvvm/8.1.0-preview1": {
         "type": "package",
         "compile": {
@@ -15222,7 +15222,7 @@
         }
       }
     },
-    "net7.0-ios16.0/ios-arm64": {
+    "net7.0-ios16.0/iossimulator-x64": {
       "CommunityToolkit.Mvvm/8.1.0-preview1": {
         "type": "package",
         "compile": {
@@ -17000,7 +17000,7 @@
         }
       }
     },
-    "net7.0-maccatalyst15.4/ios-arm64": {
+    "net7.0-maccatalyst15.4/iossimulator-x64": {
       "CommunityToolkit.Mvvm/8.1.0-preview1": {
         "type": "package",
         "compile": {
@@ -20294,7 +20294,7 @@
       "android-x86": {
         "#import": []
       },
-      "ios-arm64": {
+      "iossimulator-x64": {
         "#import": []
       },
       "maccatalyst-x64": {
