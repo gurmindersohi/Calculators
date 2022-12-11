@@ -11,7 +11,6 @@
           RowSpacing="10"
           ColumnSpacing="10">
         
-        <!--Input Parameteres-->
         <Label Text="Amount" Grid.Row="1" FontSize="Large" VerticalTextAlignment="Center" />
         <Entry Text="{Binding Amount}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium" Keyboard="Numeric"/>
         
@@ -27,10 +26,8 @@
 
         <Button Text="Calculate" Command="{Binding CalculateLoanCommand}" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2"></Button>
 
-        <!--Seperator-->
-        <Line X2="400" Stroke="black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5"></Line>
+        <Line X2="{Binding LineWidth}" Stroke="black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5"></Line>
         
-        <!--Output Parameteres-->
         <Label Text="Monthly Payment:" Grid.Row="6" FontSize="Medium" Grid.ColumnSpan="2" />
         <Label Text="{Binding MonthlyPayment}" Grid.Row="6" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" />
         

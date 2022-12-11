@@ -10,6 +10,10 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Microsoft.Extensions.Options.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.Abstractions.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.DataTransferModels.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.Infrastructure.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.Services.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/LoanCalculator.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll
@@ -186,6 +190,10 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Microsoft.Maui.Controls.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Microsoft.Maui.Essentials.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/LoanCalculator.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.Services.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.Infrastructure.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.Abstractions.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/Calculator.DataTransferModels.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/libSystem.IO.Compression.Native.dylib
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/libSystem.Native.dylib
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/publish/../LoanCalculator.app/Contents/MonoBundle/libSystem.Net.Security.Native.dylib

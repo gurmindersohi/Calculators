@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/.DS_Store</key>
+		<data>
+		vNW6Fby1zCtm/hoFCvm995D00ys=
+		</data>
 		<key>Resources/AboutAssets.txt</key>
 		<data>
 		pcNU0lDArxK2L9RzLvQgOLn2RC8=
@@ -15,6 +19,10 @@
 		<key>Resources/Images/dotnet_bot.svg</key>
 		<data>
 		EZdSFOJpkM15dhK0Fj0rbV7d/nY=
+		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		iEtuUGCV6JM3gxS/pO33swhmpp8=
 		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -35,6 +43,62 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/Calculator.Abstractions.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zEPq2HS0+tZAeqSQ9jJKybMNU1fAfgrmh18rMvbnXUA=
+			</data>
+		</dict>
+		<key>MonoBundle/Calculator.Abstractions.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QiYCVABQ4+7eU7Infg17spJ72+Yg40RdaedShkv3uMw=
+			</data>
+		</dict>
+		<key>MonoBundle/Calculator.DataTransferModels.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vjd5ZL26Dh+WJ9O2jp21EJEIL5S/ae9i6GK1MLSfrqI=
+			</data>
+		</dict>
+		<key>MonoBundle/Calculator.DataTransferModels.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GkH5eNpa6sU07ZGoZBQPB/t2L9vc2x1qGnIWx+t9aJU=
+			</data>
+		</dict>
+		<key>MonoBundle/Calculator.Infrastructure.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QJ1jjBSzmKwibwdkkVfBugbukC4nKmZ0GpMTl6EI+ng=
+			</data>
+		</dict>
+		<key>MonoBundle/Calculator.Infrastructure.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VvVuxsXsGaUtg0TwLQ6oCegbxV3iZdkCsWbnwrhTPdE=
+			</data>
+		</dict>
+		<key>MonoBundle/Calculator.Services.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iJLJar4R4rSKvHAib8d+s8J44RaHaO5QGQHn/lY9V+s=
+			</data>
+		</dict>
+		<key>MonoBundle/Calculator.Services.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4BZ9JOhk6aLSgzuA0gf0UOH86arKCD16WAzVFDufP0k=
+			</data>
+		</dict>
 		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -46,14 +110,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PaNM5JKRaKaQBxBWaqykQZTwks3hdG5iXZxwhVO9FRw=
+			lBWc6iGaMT8X4iy9VAVXVcTJF3GzYKPmHG10pYz/gag=
 			</data>
 		</dict>
 		<key>MonoBundle/LoanCalculator.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vzhjijfHBC4r5xjYTtOb1FQwHvtdpjoFGEL2FnwYdL4=
+			LedJhmBm++gh3W+0wB3+4jPbzf5T16iMbwFHRyP2Yvs=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1426,6 +1490,13 @@
 			<key>hash2</key>
 			<data>
 			+qnU902ffwQdwhPjMssFpsnlie+24nwtP3kkubqYjyU=
+			</data>
+		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>

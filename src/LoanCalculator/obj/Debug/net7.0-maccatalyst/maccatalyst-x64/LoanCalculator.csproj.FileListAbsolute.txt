@@ -255,3 +255,11 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/LoanCalculator.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/LoanCalculator.genruntimeconfig.cache
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/ref/LoanCalculator.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.Abstractions.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.DataTransferModels.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.Infrastructure.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.Services.dll
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.Services.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.Infrastructure.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.Abstractions.pdb
+/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/bin/Debug/net7.0-maccatalyst/maccatalyst-x64/Calculator.DataTransferModels.pdb

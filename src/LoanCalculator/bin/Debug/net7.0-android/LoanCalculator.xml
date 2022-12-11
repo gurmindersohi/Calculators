@@ -4,6 +4,9 @@
         <name>LoanCalculator</name>
     </assembly>
     <members>
+        <member name="P:LoanCalculator.ViewModels.MainViewModel.LineWidth">
+            <inheritdoc cref="F:LoanCalculator.ViewModels.MainViewModel.lineWidth"/>
+        </member>
         <member name="P:LoanCalculator.ViewModels.MainViewModel.MonthlyPayment">
             <inheritdoc cref="F:LoanCalculator.ViewModels.MainViewModel.monthlyPayment"/>
         </member>

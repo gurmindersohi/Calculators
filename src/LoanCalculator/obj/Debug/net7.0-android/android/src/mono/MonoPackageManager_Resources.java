@@ -101,6 +101,10 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Kotlin.StdLib.Jdk8.dll",
 		"Xamarin.KotlinX.Coroutines.Android.dll",
 		"Xamarin.KotlinX.Coroutines.Core.Jvm.dll",
+		"Calculator.Abstractions.dll",
+		"Calculator.DataTransferModels.dll",
+		"Calculator.Infrastructure.dll",
+		"Calculator.Services.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

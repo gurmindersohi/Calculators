@@ -16,6 +16,9 @@ namespace LoanCalculator.ViewModels
         }
 
         [ObservableProperty]
+        double lineWidth = DeviceDisplay.MainDisplayInfo.Width;
+
+        [ObservableProperty]
         string monthlyPayment = "-";
 
         [ObservableProperty]
