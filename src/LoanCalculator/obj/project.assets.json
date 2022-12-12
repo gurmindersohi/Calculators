@@ -19962,11 +19962,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/LoanCalculator.csproj",
+      "projectUniqueName": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/LoanCalculator/LoanCalculator.csproj",
       "projectName": "LoanCalculator",
-      "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/LoanCalculator.csproj",
+      "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/LoanCalculator/LoanCalculator.csproj",
       "packagesPath": "/Users/gurmindersingh/.nuget/packages/",
-      "outputPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/LoanCalculator/obj/",
+      "outputPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/LoanCalculator/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
@@ -19985,33 +19985,33 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
-            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
-              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
+            "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
+              "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
             },
-            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
-              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
+            "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
             }
           }
         },
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {
-            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
-              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
+            "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
+              "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
             },
-            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
-              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
+            "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
             }
           }
         },
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
           "projectReferences": {
-            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
-              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
+            "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj": {
+              "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Infrastructure/Calculator.Infrastructure.csproj"
             },
-            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
-              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
+            "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
             }
           }
         }

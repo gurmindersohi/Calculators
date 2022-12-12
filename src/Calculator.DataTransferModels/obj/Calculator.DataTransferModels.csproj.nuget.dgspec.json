@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj": {}
+    "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj": {}
   },
   "projects": {
-    "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj": {
+    "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj",
+        "projectUniqueName": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj",
         "projectName": "Calculator.DataTransferModels",
-        "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj",
+        "projectPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/Calculator.DataTransferModels.csproj",
         "packagesPath": "/Users/gurmindersingh/.nuget/packages/",
-        "outputPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/",
+        "outputPath": "/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/gurmindersingh/.nuget/NuGet/NuGet.Config"

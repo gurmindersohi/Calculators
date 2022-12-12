@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Calculator.DataTransferModels
-build_property.ProjectDir = /Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/
+build_property.ProjectDir = /Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/
