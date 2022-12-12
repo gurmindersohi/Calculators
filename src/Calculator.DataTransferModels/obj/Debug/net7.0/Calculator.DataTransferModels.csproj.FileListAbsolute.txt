@@ -10,3 +10,15 @@
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/refint/Calculator.DataTransferModels.dll
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.pdb
 /Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/ref/Calculator.DataTransferModels.dll
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/bin/Debug/net7.0/Calculator.DataTransferModels.deps.json
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/bin/Debug/net7.0/Calculator.DataTransferModels.dll
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/bin/Debug/net7.0/Calculator.DataTransferModels.pdb
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.csproj.AssemblyReference.cache
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.AssemblyInfoInputs.cache
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.AssemblyInfo.cs
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.csproj.CoreCompileInputs.cache
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.dll
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/refint/Calculator.DataTransferModels.dll
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/Calculator.DataTransferModels.pdb
+/Users/gurmindersingh/Desktop/dev/Products/Calculators/src/Calculator.DataTransferModels/obj/Debug/net7.0/ref/Calculator.DataTransferModels.dll
