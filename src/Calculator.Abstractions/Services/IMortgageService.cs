@@ -14,6 +14,6 @@ namespace Calculator.Abstractions.Services
         /// <summary>
         /// Calculates the mortgage.
         /// </summary>
-        ResponseDto CalculateMortgage(MortgageDto mortgageDto);
+        MortgageResponse CalculateMortgage(MortgageDto mortgageDto);
     }
 }

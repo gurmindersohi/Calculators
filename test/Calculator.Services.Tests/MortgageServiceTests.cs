@@ -57,10 +57,11 @@ namespace Calculator.Services.Tests
             var response = _service.CalculateMortgage(item);
 
             // Assert
-            response.MonthlyPayment.Should().Be(expectedMonthlyPayment);
-            response.MonthlyInterest.Should().Be(expectedMonthlyInterest);
-            response.TotalInterest.Should().Be(expectedTotalInterest);
-            response.TotalAmount.Should().Be(expectedTotalAmount);
+            response.Success.Should().Be(true);
+            response.ResponseDto.MonthlyPayment.Should().Be(expectedMonthlyPayment);
+            response.ResponseDto.MonthlyInterest.Should().Be(expectedMonthlyInterest);
+            response.ResponseDto.TotalInterest.Should().Be(expectedTotalInterest);
+            response.ResponseDto.TotalAmount.Should().Be(expectedTotalAmount);
         }
     }
 }

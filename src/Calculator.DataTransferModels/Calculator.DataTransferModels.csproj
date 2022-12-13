@@ -10,10 +10,12 @@
     <None Remove="Loan\" />
     <None Remove="Mortgage\" />
     <None Remove="Enums\" />
+    <None Remove="Response\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Loan\" />
     <Folder Include="Mortgage\" />
     <Folder Include="Enums\" />
+    <Folder Include="Response\" />
   </ItemGroup>
 </Project>

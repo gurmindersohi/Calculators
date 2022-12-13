@@ -18,24 +18,31 @@ namespace Calculator.Services
         /// <summary>
         /// Calculates the mortgage.
         /// </summary>
-        public ResponseDto CalculateMortgage(MortgageDto mortgageDto)
+        public MortgageResponse CalculateMortgage(MortgageDto mortgageDto)
         {
-            var period = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
-            var interestRate = CalculateInterestRate(mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
-            var monthlyPayment = CalculateMonthlyPayment(mortgageDto.MortgageAmount, period, interestRate);
-            var totalAmount = CalculateTotalAmount(monthlyPayment, period);
-            var totalInterest = CalculateTotalInterest(totalAmount, mortgageDto.MortgageAmount);
-            var monthlyInterest = CalculateMonthlyInterest(totalInterest, period);
-
-            var response = new ResponseDto()
+            try
             {
-                MonthlyPayment = Math.Round(monthlyPayment, 2),
-                MonthlyInterest = Math.Round(monthlyInterest, 2),
-                TotalInterest = Math.Round(totalInterest, 2),
-                TotalAmount = Math.Round(totalAmount, 2),
-            };
+                var period = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
+                var interestRate = CalculateInterestRate(mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
+                var monthlyPayment = CalculateMonthlyPayment(mortgageDto.MortgageAmount, period, interestRate);
+                var totalAmount = CalculateTotalAmount(monthlyPayment, period);
+                var totalInterest = CalculateTotalInterest(totalAmount, mortgageDto.MortgageAmount);
+                var monthlyInterest = CalculateMonthlyInterest(totalInterest, period);
 
-            return response;
+                var response = new ResponseDto()
+                {
+                    MonthlyPayment = Math.Round(monthlyPayment, 2),
+                    MonthlyInterest = Math.Round(monthlyInterest, 2),
+                    TotalInterest = Math.Round(totalInterest, 2),
+                    TotalAmount = Math.Round(totalAmount, 2),
+                };
+
+                return new MortgageResponse(response);
+            }
+            catch (Exception ex)
+            {
+                return new MortgageResponse($"An error occurred while calculating the mortgage: {ex.Message}");
+            }
         }
 
         private static double CalculateMonthlyPayment(double mortgageAmount, int months, double interestRate)
