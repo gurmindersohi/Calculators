@@ -23,59 +23,25 @@ namespace Calculator.Services.Tests
             _service = new MortgageService();
         }
 
-        //[Theory]
-        //[InlineData(1000, 2, 0, PaymentFrequency.Monthly, 10, 46.14)]
-        //[InlineData(1000, 2, 6, PaymentFrequency.Monthly, 10, 37.81)]
-        //[InlineData(10000, 2, 0, PaymentFrequency.Monthly, 10, 461.45)]
-        //[InlineData(10000, 2, 0, PaymentFrequency.SemiMonthly, 10, 230.29)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.Monthly, 10, 2726.10)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.Monthly, 6.49, 2023.75)]
-        //[InlineData(300000, 25, 3, PaymentFrequency.Monthly, 3.79, 1539.73)]
-        //[InlineData(300000, 25, 3, PaymentFrequency.SemiMonthly, 3.79, 769.5)]
-        //[InlineData(300000, 25, 3, PaymentFrequency.BiWeekly, 3.79, 714.53)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.BiWeekly, 3.79, 714.53)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.Weekly, 3.79, 357.19)]
-        //[InlineData(300000, 25, 3, PaymentFrequency.Weekly, 3.79, 384)]
-        //public void CalculateLoan_ValidInput_ShouldSucceed(double mortgageAmount,
-        //     double years,
-        //     double months,
-        //     PaymentFrequency paymentFrequency,
-        //     double interestRate,
-        //     double expectedMonthlyPayment)
-        //{
-        //    // Arrange
-        //    var item = new MortgageDto()
-        //    {
-        //        MortgageAmount = mortgageAmount,
-        //        Years = years,
-        //        Months = months,
-        //        PaymentFrequency = paymentFrequency,
-        //        InterestRate = interestRate,
-        //    };
-
-        //    // Act
-        //    var response = _service.CalculateMortgage(item);
-
-        //    // Assert
-        //    response.MonthlyPayment.Should().Be(expectedMonthlyPayment);
-        //}
-
         [Theory]
-        [InlineData(39176.00, 7, 0, PaymentFrequency.Monthly, 3.79, 531.71)]
-        [InlineData(300000, 25, 0, PaymentFrequency.Monthly, 1, 1130.62)]
-        [InlineData(300000, 25, 6, PaymentFrequency.Monthly, 1, 1111.11)]
-        [InlineData(39176.00, 7, 0, PaymentFrequency.SemiMonthly, 3.79, 265.67)]
-        [InlineData(300000, 25, 0, PaymentFrequency.SemiMonthly, 1, 565.21)]
-        [InlineData(39176.00, 7, 0, PaymentFrequency.BiWeekly, 3.79, 245.22)]
-        [InlineData(300000, 25, 0, PaymentFrequency.BiWeekly, 1, 521.72)]
-        [InlineData(39176.00, 7, 0, PaymentFrequency.Weekly, 3.79, 122.57)]
-        [InlineData(300000, 25, 0, PaymentFrequency.Weekly, 1, 260.84)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.Monthly, 3.79, 531.71, 65.33, 5487.68, 44663.68)]
+        [InlineData(300000, 25, 0, PaymentFrequency.Monthly, 1, 1130.62, 130.62, 39185.21, 339185.21)]
+        [InlineData(300000, 25, 6, PaymentFrequency.Monthly, 1, 1111.11, 130.71, 39998.17, 339998.17)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.SemiMonthly, 3.79, 265.67, 32.48, 5456.95, 44632.95)]
+        [InlineData(300000, 25, 0, PaymentFrequency.SemiMonthly, 1, 565.21, 65.21, 39123.05, 339123.05)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.BiWeekly, 3.79, 245.22, 29.97, 5454.59, 44630.59)]
+        [InlineData(300000, 25, 0, PaymentFrequency.BiWeekly, 1, 521.72, 60.18, 39118.26, 339118.26)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.Weekly, 3.79, 122.57, 14.95, 5440.4, 44616.4)]
+        [InlineData(300000, 25, 0, PaymentFrequency.Weekly, 1, 260.84, 30.07, 39089.57, 339089.57)]
         public void CalculateLoan_ValidInput_ShouldSucceed(double mortgageAmount,
              int years,
              int months,
              PaymentFrequency paymentFrequency,
              double interestRate,
-             double expectedMonthlyPayment)
+             double expectedMonthlyPayment,
+             double expectedMonthlyInterest,
+             double expectedTotalInterest,
+             double expectedTotalAmount)
         {
             // Arrange
             var item = new MortgageDto()
@@ -92,6 +58,9 @@ namespace Calculator.Services.Tests
 
             // Assert
             response.MonthlyPayment.Should().Be(expectedMonthlyPayment);
+            response.MonthlyInterest.Should().Be(expectedMonthlyInterest);
+            response.TotalInterest.Should().Be(expectedTotalInterest);
+            response.TotalAmount.Should().Be(expectedTotalAmount);
         }
     }
 }
