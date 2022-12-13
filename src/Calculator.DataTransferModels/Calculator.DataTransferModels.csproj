@@ -8,8 +8,12 @@
 
   <ItemGroup>
     <None Remove="Loan\" />
+    <None Remove="Mortgage\" />
+    <None Remove="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Loan\" />
+    <Folder Include="Mortgage\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 </Project>

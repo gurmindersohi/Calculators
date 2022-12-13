@@ -6543,11 +6543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/gurmindersingh/Projects/dev/Products/Calculators/test/Calculator.Services.Tests/Calculator.Services.Tests.csproj",
+      "projectUniqueName": "/Users/gurmindersingh/Documents/dev/Products/Calculators/test/Calculator.Services.Tests/Calculator.Services.Tests.csproj",
       "projectName": "Calculator.Services.Tests",
-      "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/test/Calculator.Services.Tests/Calculator.Services.Tests.csproj",
+      "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Calculators/test/Calculator.Services.Tests/Calculator.Services.Tests.csproj",
       "packagesPath": "/Users/gurmindersingh/.nuget/packages/",
-      "outputPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/test/Calculator.Services.Tests/obj/",
+      "outputPath": "/Users/gurmindersingh/Documents/dev/Products/Calculators/test/Calculator.Services.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/gurmindersingh/.nuget/NuGet/NuGet.Config"
@@ -6563,8 +6563,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
-              "projectPath": "/Users/gurmindersingh/Projects/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
+            "/Users/gurmindersingh/Documents/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj": {
+              "projectPath": "/Users/gurmindersingh/Documents/dev/Products/Calculators/src/Calculator.Services/Calculator.Services.csproj"
             }
           }
         }
