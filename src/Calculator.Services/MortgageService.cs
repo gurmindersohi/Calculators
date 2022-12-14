@@ -21,16 +21,16 @@ namespace Calculator.Services
         {
             try
             {
-                var period = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
+                var periods = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
                 var interestRate = CalculateInterestRate(mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
-                var monthlyPayment = CalculateMonthlyPayment(mortgageDto.MortgageAmount, period, interestRate);
-                var totalAmount = CalculateTotalAmount(monthlyPayment, period);
+                var payment = CalculatePayment(mortgageDto.MortgageAmount, periods, interestRate);
+                var totalAmount = CalculateTotalAmount(payment, periods);
                 var totalInterest = CalculateTotalInterest(totalAmount, mortgageDto.MortgageAmount);
-                var monthlyInterest = CalculateMonthlyInterest(totalInterest, period);
+                var monthlyInterest = CalculateMonthlyInterest(totalInterest, periods);
 
                 var response = new ResponseDto()
                 {
-                    Payment = Math.Round(monthlyPayment, 2),
+                    Payment = Math.Round(payment, 2),
                     Interest = Math.Round(monthlyInterest, 2),
                     TotalInterest = Math.Round(totalInterest, 2),
                     TotalAmount = Math.Round(totalAmount, 2),
@@ -44,14 +44,14 @@ namespace Calculator.Services
             }
         }
 
-        private static double CalculateMonthlyPayment(double mortgageAmount, int months, double interestRate)
+        private static double CalculatePayment(double mortgageAmount, int periods, double interestRate)
         {
             if (interestRate == 0)
             {
-                return mortgageAmount / months;
+                return mortgageAmount / periods;
             }
 
-            return interestRate / (1 - Math.Pow((1 + interestRate), -(months))) * mortgageAmount;
+            return interestRate / (1 - Math.Pow((1 + interestRate), -(periods))) * mortgageAmount;
         }
 
         private static double CalculateTotalAmount(double monthlyPayment, int months)
