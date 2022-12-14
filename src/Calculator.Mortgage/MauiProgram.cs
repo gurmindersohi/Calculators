@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Calculator.Infrastructure;
+using Microsoft.Extensions.Logging;
+using Calculator.Mortgage.ViewModels;
 
 namespace Calculator.Mortgage;
 
@@ -19,7 +21,11 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		return builder.Build();
+        builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<MainViewModel>();
+        builder.Services.AddCalculatorServices();
+
+        return builder.Build();
 	}
 }
 

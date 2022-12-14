@@ -1,40 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Calculator.Mortgage.MainPage">
+             x:Class="Calculator.Mortgage.MainPage"
+             xmlns:viewmodel="clr-namespace:Calculator.Mortgage.ViewModels"
+             x:DataType="viewmodel:MainViewModel">
 
     <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+        <VerticalStackLayout>
+            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto"
+                ColumnDefinitions="1*, .5*, .5*, .5*, .5*"
+                Padding="20"
+                RowSpacing="10"
+                ColumnSpacing="10">
+        
+                <Label Text="Amount" Grid.Row="1" FontSize="Large" VerticalTextAlignment="Center" />
+                <Entry Text="{Binding Amount}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" FontSize="Medium" Keyboard="Numeric"/>
+        
+                <Label Text="Rate" Grid.Row="2" FontSize="Large" VerticalTextAlignment="Center" />
+                <Entry Text="{Binding Rate}" Grid.Row="2" Grid.Column="1" FontSize="Medium" Grid.ColumnSpan="2" Keyboard="Numeric"/>
+                <Label Text="% per year" Grid.Row="2" Grid.Column="3" FontSize="Small" Grid.ColumnSpan="2" VerticalTextAlignment="Center" />
+        
+                <Label Text="Term" Grid.Row="3" FontSize="Large" VerticalTextAlignment="Center" />
+                <Entry Text="{Binding Years}" Grid.Row="3" Grid.Column="1" FontSize="Medium" Keyboard="Numeric"/>
+                <Label Text="Years" Grid.Row="3" Grid.Column="2" FontSize="Small" VerticalTextAlignment="Center" />
+                <Entry Text="{Binding Months}" Grid.Row="3" Grid.Column="3" FontSize="Medium" Keyboard="Numeric" />
+                <Label Text="Months" Grid.Row="3" Grid.Column="4" FontSize="Small" VerticalTextAlignment="Center" />
+                
+                <Label Text="Frequency" Grid.Row="4" Grid.ColumnSpan="2" FontSize="Large" VerticalTextAlignment="Center" />
+                <Picker Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2">
+                  <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                      <x:String>Monthly</x:String>
+                      <x:String>Semi-Monthly</x:String>
+                      <x:String>Bi-Weekly</x:String>
+                      <x:String>Weekly</x:String>
+                    </x:Array>
+                  </Picker.ItemsSource>
+                </Picker>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+                <Button Text="Calculate" Command="{Binding CalculateLoanCommand}" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2"></Button>
+            </Grid>
+            
+            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
+                ColumnDefinitions="1*, .5*, .5*, .5*, .5*"
+                Padding="20"
+                RowSpacing="10"
+                ColumnSpacing="10">
+                
+                <Line X2="{Binding LineWidth}" Stroke="black" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"></Line>
+        
+                <Label Text="Monthly Payment:" Grid.Row="2" FontSize="Medium" Grid.ColumnSpan="2" />
+                <Label Text="{Binding MonthlyPayment}" Grid.Row="2" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
+        
+                <Label Text="Monthly Interest:" Grid.Row="3" FontSize="Medium" Grid.ColumnSpan="3" />
+                <Label Text="{Binding MonthlyInterest}" Grid.Row="3" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
+        
+                <Label Text="Total Interest:" Grid.Row="4" FontSize="Medium" Grid.ColumnSpan="3" />
+                <Label Text="{Binding TotalInterest}" Grid.Row="4" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
+                <Label Text="Total Amount:" Grid.Row="5" FontSize="Medium" Grid.ColumnSpan="3" />
+                <Label Text="{Binding TotalAmount}" Grid.Row="5" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 
