@@ -67,9 +67,11 @@
 	<ItemGroup>
 	  <None Remove="ViewModels\" />
 	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Extensions\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
+	  <Folder Include="Extensions\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Calculator.Abstractions\Calculator.Abstractions.csproj" />

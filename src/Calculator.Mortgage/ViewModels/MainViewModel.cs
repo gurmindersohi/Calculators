@@ -10,6 +10,7 @@ namespace Calculator.Mortgage.ViewModels
     using Calculator.Services;
     using Calculator.DataTransferModels.Mortgage;
     using Calculator.DataTransferModels.Enums;
+    using Calculator.Mortgage.Extensions;
 
     public partial class MainViewModel : ObservableObject
     {
@@ -39,16 +40,16 @@ namespace Calculator.Mortgage.ViewModels
         string period;
 
         [ObservableProperty]
-        string amount;
+        double? amount;
 
         [ObservableProperty]
-        string rate;
+        double? rate;
 
         [ObservableProperty]
-        string years;
+        int? years;
 
         [ObservableProperty]
-        string months;
+        int? months;
 
         [ObservableProperty]
         int paymentFrequency = 0;
@@ -59,33 +60,33 @@ namespace Calculator.Mortgage.ViewModels
         [RelayCommand]
         void CalculateLoan()
         {
-            if (string.IsNullOrWhiteSpace(amount))
-            {
-                amount = "0";
-            }
+            //if (string.IsNullOrWhiteSpace(amount))
+            //{
+            //    amount = "0";
+            //}
 
-            if (string.IsNullOrWhiteSpace(rate))
-            {
-                rate = "0";
-            }
+            //if (string.IsNullOrWhiteSpace(rate))
+            //{
+            //    rate = "0";
+            //}
 
-            if (string.IsNullOrWhiteSpace(years))
-            {
-                years = "0";
-            }
+            //if (string.IsNullOrWhiteSpace(years))
+            //{
+            //    years = "0";
+            //}
 
-            if (string.IsNullOrWhiteSpace(months))
-            {
-                months = "0";
-            }
+            //if (string.IsNullOrWhiteSpace(months))
+            //{
+            //    months = "0";
+            //}
 
             var mortgageDto = new MortgageDto()
             {
-                MortgageAmount = Convert.ToDouble(Amount),
-                Years = Convert.ToInt32(years),
-                Months = Convert.ToInt32(months),
+                MortgageAmount = Amount ?? 0,
+                Years = years ?? 0,
+                Months = months ?? 0,
                 PaymentFrequency = (PaymentFrequency)paymentFrequency,
-                InterestRate = Convert.ToDouble(rate)
+                InterestRate = rate ?? 0
             };
 
             var response = _mortgageService.CalculateMortgage(mortgageDto);
@@ -97,7 +98,7 @@ namespace Calculator.Mortgage.ViewModels
                 TotalInterest = String.Format("${0:n2}", response.ResponseDto.TotalInterest);
                 TotalAmount = String.Format("${0:n2}", response.ResponseDto.TotalAmount);
                 var paymentPeriod = (PaymentFrequency)paymentFrequency;
-                Period = $"{paymentPeriod}";
+                Period = $"{paymentPeriod.GetDisplayName()}";
                 visible = true;
             }
         }

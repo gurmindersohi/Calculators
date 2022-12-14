@@ -42,24 +42,23 @@
             </Grid>
             
             <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
-                IsVisible="{Binding Visible}"
-                ColumnDefinitions="1*, .5*, .5*, .5*, .5*"
+                ColumnDefinitions="1*, 1*"
                 Padding="20"
                 RowSpacing="10"
                 ColumnSpacing="10">
                 
                 <Line X2="{Binding LineWidth}" Stroke="black" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"></Line>
         
-                <Label Text="{Binding Period, StringFormat=Payment: {Period}} " Grid.Row="2" FontSize="Medium" Grid.ColumnSpan="2" />
+                <Label Text="{Binding Period, StringFormat={}{0:C} Payment:}" Grid.Row="2" FontSize="Small" Grid.ColumnSpan="2" />
                 <Label Text="{Binding Payment}" Grid.Row="2" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
         
-                <Label Text="{Binding Period, StringFormat=Interest: {Period}}" Grid.Row="3" FontSize="Medium" Grid.ColumnSpan="3" />
-                <Label Text="{Binding Interest}" Grid.Row="3" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
+                <Label Text="{Binding Period, StringFormat={}{0:C} Interest:}" Grid.Row="3" FontSize="Small" Grid.ColumnSpan="3" />
+                <Label Text="{Binding Interest, StringFormat=Weekly: {Interest}}" Grid.Row="3" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
         
-                <Label Text="Total Interest:" Grid.Row="4" FontSize="Medium" Grid.ColumnSpan="3" />
+                <Label Text="Total Interest:" Grid.Row="4" FontSize="Small" Grid.ColumnSpan="3" />
                 <Label Text="{Binding TotalInterest}" Grid.Row="4" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
 
-                <Label Text="Total Amount:" Grid.Row="5" FontSize="Medium" Grid.ColumnSpan="3" />
+                <Label Text="Total Amount:" Grid.Row="5" FontSize="Small" Grid.ColumnSpan="3" />
                 <Label Text="{Binding TotalAmount}" Grid.Row="5" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
             </Grid>
         </VerticalStackLayout>
