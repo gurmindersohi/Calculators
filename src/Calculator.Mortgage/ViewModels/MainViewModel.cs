@@ -24,16 +24,19 @@ namespace Calculator.Mortgage.ViewModels
         double lineWidth = DeviceDisplay.MainDisplayInfo.Width;
 
         [ObservableProperty]
-        string monthlyPayment = "-";
+        string payment = "-";
 
         [ObservableProperty]
-        string monthlyInterest = "-";
+        string interest = "-";
 
         [ObservableProperty]
         string totalInterest = "-";
 
         [ObservableProperty]
         string totalAmount = "-";
+
+        [ObservableProperty]
+        string period;
 
         [ObservableProperty]
         string amount;
@@ -48,7 +51,10 @@ namespace Calculator.Mortgage.ViewModels
         string months;
 
         [ObservableProperty]
-        int paymentFrequency;
+        int paymentFrequency = 0;
+
+        [ObservableProperty]
+        bool visible;
 
         [RelayCommand]
         void CalculateLoan()
@@ -84,10 +90,16 @@ namespace Calculator.Mortgage.ViewModels
 
             var response = _mortgageService.CalculateMortgage(mortgageDto);
 
-            MonthlyPayment = String.Format("${0:n2}", response.ResponseDto.MonthlyPayment);
-            MonthlyInterest = String.Format("${0:n2}", response.ResponseDto.MonthlyInterest);
-            TotalInterest = String.Format("${0:n2}", response.ResponseDto.TotalInterest);
-            TotalAmount = String.Format("${0:n2}", response.ResponseDto.TotalAmount);
+            if (response.Success)
+            {
+                Payment = String.Format("${0:n2}", response.ResponseDto.Payment);
+                Interest = String.Format("${0:n2}", response.ResponseDto.Interest);
+                TotalInterest = String.Format("${0:n2}", response.ResponseDto.TotalInterest);
+                TotalAmount = String.Format("${0:n2}", response.ResponseDto.TotalAmount);
+                var paymentPeriod = (PaymentFrequency)paymentFrequency;
+                Period = $"{paymentPeriod}";
+                visible = true;
+            }
         }
     }
 }

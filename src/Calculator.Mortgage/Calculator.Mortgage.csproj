@@ -33,6 +33,8 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	  <CodesignKey>Apple Development: gurmindersohi@icloud.com (VL494QP7BH)</CodesignKey>
+	  <CodesignProvision>iOS Team Provisioning Profile: com.sohi.Calculator.Mortgage</CodesignProvision>
+	  <MtouchDebug>true</MtouchDebug>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>

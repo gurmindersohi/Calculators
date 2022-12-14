@@ -31,8 +31,8 @@ namespace Calculator.Services
 
                 var response = new ResponseDto()
                 {
-                    MonthlyPayment = Math.Round(monthlyPayment, 2),
-                    MonthlyInterest = Math.Round(monthlyInterest, 2),
+                    Payment = Math.Round(monthlyPayment, 2),
+                    Interest = Math.Round(monthlyInterest, 2),
                     TotalInterest = Math.Round(totalInterest, 2),
                     TotalAmount = Math.Round(totalAmount, 2),
                 };

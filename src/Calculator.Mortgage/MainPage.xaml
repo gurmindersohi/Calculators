@@ -7,8 +7,8 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto"
-                ColumnDefinitions="1*, .5*, .5*, .5*, .5*"
+            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
+                ColumnDefinitions="1.1*, .5*, .4*, .5*, .5*"
                 Padding="20"
                 RowSpacing="10"
                 ColumnSpacing="10">
@@ -27,7 +27,7 @@
                 <Label Text="Months" Grid.Row="3" Grid.Column="4" FontSize="Small" VerticalTextAlignment="Center" />
                 
                 <Label Text="Frequency" Grid.Row="4" Grid.ColumnSpan="2" FontSize="Large" VerticalTextAlignment="Center" />
-                <Picker Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2">
+                <Picker Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" SelectedIndex="{Binding PaymentFrequency, Mode=TwoWay}" >
                   <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                       <x:String>Monthly</x:String>
@@ -42,6 +42,7 @@
             </Grid>
             
             <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
+                IsVisible="{Binding Visible}"
                 ColumnDefinitions="1*, .5*, .5*, .5*, .5*"
                 Padding="20"
                 RowSpacing="10"
@@ -49,11 +50,11 @@
                 
                 <Line X2="{Binding LineWidth}" Stroke="black" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"></Line>
         
-                <Label Text="Monthly Payment:" Grid.Row="2" FontSize="Medium" Grid.ColumnSpan="2" />
-                <Label Text="{Binding MonthlyPayment}" Grid.Row="2" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
+                <Label Text="{Binding Period, StringFormat=Payment: {Period}} " Grid.Row="2" FontSize="Medium" Grid.ColumnSpan="2" />
+                <Label Text="{Binding Payment}" Grid.Row="2" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
         
-                <Label Text="Monthly Interest:" Grid.Row="3" FontSize="Medium" Grid.ColumnSpan="3" />
-                <Label Text="{Binding MonthlyInterest}" Grid.Row="3" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
+                <Label Text="{Binding Period, StringFormat=Interest: {Period}}" Grid.Row="3" FontSize="Medium" Grid.ColumnSpan="3" />
+                <Label Text="{Binding Interest}" Grid.Row="3" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
         
                 <Label Text="Total Interest:" Grid.Row="4" FontSize="Medium" Grid.ColumnSpan="3" />
                 <Label Text="{Binding TotalInterest}" Grid.Row="4" Grid.Column="2" FontSize="Medium" Grid.ColumnSpan="3" FontAttributes="Bold" FontFamily="" />
