@@ -12,12 +12,12 @@ namespace Calculator.DataTransferModels.Mortgage
         // <summary>
         // Gets or Sets the monthly payment.
         // </summary>
-        public double MonthlyPayment { get; set; }
+        public double Payment { get; set; }
 
         // <summary>
         // Gets or Sets the monthly interest
         // </summary>
-        public double MonthlyInterest { get; set; }
+        public double Interest { get; set; }
 
         // <summary>
         // Gets or Sets the total interest.
@@ -30,4 +30,3 @@ namespace Calculator.DataTransferModels.Mortgage
         public double TotalAmount { get; set; }
     }
 }
-

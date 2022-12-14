@@ -24,9 +24,9 @@ namespace Calculator.Services
             //configuration.NotNull(nameof(configuration));
 
             services.AddTransient(typeof(ILoanService), typeof(LoanService));
+            services.AddTransient(typeof(IMortgageService), typeof(MortgageService));
 
             return services;
         }
     }
 }
-

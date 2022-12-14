@@ -58,11 +58,10 @@ namespace Calculator.Services.Tests
 
             // Assert
             response.Success.Should().Be(true);
-            response.ResponseDto.MonthlyPayment.Should().Be(expectedMonthlyPayment);
-            response.ResponseDto.MonthlyInterest.Should().Be(expectedMonthlyInterest);
+            response.ResponseDto.Payment.Should().Be(expectedMonthlyPayment);
+            response.ResponseDto.Interest.Should().Be(expectedMonthlyInterest);
             response.ResponseDto.TotalInterest.Should().Be(expectedTotalInterest);
             response.ResponseDto.TotalAmount.Should().Be(expectedTotalAmount);
         }
     }
 }
-

@@ -8,7 +8,6 @@ namespace Calculator.Services
     using Calculator.Abstractions.Services;
     using Calculator.DataTransferModels.Enums;
     using Calculator.DataTransferModels.Mortgage;
-    using static System.Runtime.InteropServices.JavaScript.JSType;
 
     /// <summary>
     /// Interace defining the methods the mortgage service contains.
@@ -31,8 +30,8 @@ namespace Calculator.Services
 
                 var response = new ResponseDto()
                 {
-                    MonthlyPayment = Math.Round(monthlyPayment, 2),
-                    MonthlyInterest = Math.Round(monthlyInterest, 2),
+                    Payment = Math.Round(monthlyPayment, 2),
+                    Interest = Math.Round(monthlyInterest, 2),
                     TotalInterest = Math.Round(totalInterest, 2),
                     TotalAmount = Math.Round(totalAmount, 2),
                 };
