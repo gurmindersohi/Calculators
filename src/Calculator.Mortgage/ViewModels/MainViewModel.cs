@@ -37,7 +37,7 @@ namespace Calculator.Mortgage.ViewModels
         string totalAmount = "-";
 
         [ObservableProperty]
-        string period;
+        string period = "Monthly";
 
         [ObservableProperty]
         double? amount;
@@ -54,32 +54,9 @@ namespace Calculator.Mortgage.ViewModels
         [ObservableProperty]
         int paymentFrequency = 0;
 
-        [ObservableProperty]
-        bool visible;
-
         [RelayCommand]
         void CalculateLoan()
         {
-            //if (string.IsNullOrWhiteSpace(amount))
-            //{
-            //    amount = "0";
-            //}
-
-            //if (string.IsNullOrWhiteSpace(rate))
-            //{
-            //    rate = "0";
-            //}
-
-            //if (string.IsNullOrWhiteSpace(years))
-            //{
-            //    years = "0";
-            //}
-
-            //if (string.IsNullOrWhiteSpace(months))
-            //{
-            //    months = "0";
-            //}
-
             var mortgageDto = new MortgageDto()
             {
                 MortgageAmount = Amount ?? 0,
@@ -99,7 +76,6 @@ namespace Calculator.Mortgage.ViewModels
                 TotalAmount = String.Format("${0:n2}", response.ResponseDto.TotalAmount);
                 var paymentPeriod = (PaymentFrequency)paymentFrequency;
                 Period = $"{paymentPeriod.GetDisplayName()}";
-                visible = true;
             }
         }
     }
