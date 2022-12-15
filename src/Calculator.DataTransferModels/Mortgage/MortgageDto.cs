@@ -45,5 +45,18 @@ namespace Calculator.DataTransferModels.Mortgage
         [Required]
         [Range(0, double.MaxValue)]
         public double InterestRate { get; set; }
+
+        // <summary>
+        // Gets or Sets the extra payment amount.
+        // </summary>
+        [Required]
+        [Range(0, double.MaxValue)]
+        public double ExtraPayment { get; set; }
+
+        // <summary>
+        // Gets or Sets the extra payment frequency.
+        // </summary>
+        [Required]
+        public ExtraPaymentFrequency ExtraPaymentFrequency { get; set; }
     }
 }
