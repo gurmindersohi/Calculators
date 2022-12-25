@@ -22,9 +22,9 @@ namespace Calculator.Services
         {
             try
             {
+                // Period should be 65 but it is 52 Biweekly 2 year 6 monts test.
                 var period = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
-                var interestRate = CalculateInterestRate(mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
-                var monthlyPayment = CalculateMonthlyPayment(mortgageDto.MortgageAmount, period, interestRate);
+                var monthlyPayment = CalculatePayment(mortgageDto.MortgageAmount, period, mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
                 var totalAmount = CalculateTotalAmount(monthlyPayment, period);
                 var totalInterest = CalculateTotalInterest(totalAmount, mortgageDto.MortgageAmount);
                 var monthlyInterest = CalculateMonthlyInterest(totalInterest, period);
@@ -45,14 +45,16 @@ namespace Calculator.Services
             }
         }
 
-        private static double CalculateMonthlyPayment(double mortgageAmount, int months, double interestRate)
+        public double CalculatePayment(double mortgageAmount, int periods, double interestRate, PaymentFrequency paymentFrequency)
         {
             if (interestRate == 0)
             {
-                return mortgageAmount / months;
+                return mortgageAmount / periods;
             }
 
-            return interestRate / (1 - Math.Pow((1 + interestRate), -(months))) * mortgageAmount;
+            var rate = CalculateInterestRate(interestRate, paymentFrequency);
+
+            return rate / (1 - Math.Pow((1 + rate), -(periods))) * mortgageAmount;
         }
 
         private static double CalculateTotalAmount(double monthlyPayment, int months)
@@ -71,22 +73,30 @@ namespace Calculator.Services
             return monthlyInterest;
         }
 
-        private static int TotalPeriod(int year, int months, PaymentFrequency paymentFrequency)
+        public int TotalPeriod(int years, int months, PaymentFrequency paymentFrequency)
         {
-            var totalMonths = months + (year * 12);
+            decimal totalMonths = months + (years * 12);
+            var periods = decimal.MinValue;
             switch (paymentFrequency)
             {
                 case PaymentFrequency.Monthly:
-                    return totalMonths;
+                    periods = totalMonths;
+                    break;
                 case PaymentFrequency.SemiMonthly:
-                    return totalMonths * 2;
+                    periods = totalMonths * 2;
+                    break;
                 case PaymentFrequency.BiWeekly:
-                    return (totalMonths / 12) * 26;
+                    periods = totalMonths / 12 * 26;
+                    break;
                 case PaymentFrequency.Weekly:
-                    return (totalMonths / 12) * 52;
+                    periods = (totalMonths / 12) * 52;
+                    break;
                 default:
-                    return 0;
+                    periods = 0;
+                    break;
             }
+
+            return Convert.ToInt32(periods);
         }
 
         private static double CalculateInterestRate(double interestRate, PaymentFrequency paymentFrequency)
