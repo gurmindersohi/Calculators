@@ -26,6 +26,7 @@ namespace Calculator.Services.Tests
         [Theory]
         [InlineData(1000, 2, 6, PaymentFrequency.BiWeekly, 10, 18.90, 30.07, 39089.57, 339089.57)]
         [InlineData(1000, 2, 0, PaymentFrequency.BiWeekly, 10, 17.10, 30.07, 39089.57, 339089.57)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.Monthly, 3.79, 531.71, 65.33, 5487.64, 44663.64)]
         public void CalculateLoan_ValidInput_ShouldSucceed(double mortgageAmount,
              int years,
              int months,
@@ -58,20 +59,23 @@ namespace Calculator.Services.Tests
         }
 
         [Theory]
-        [InlineData(10000, 60, 5, 193.33)]
-        public void CalculateMonthlyPayment_ValidInput_ShouldSucceed(double mortgageAmount,
-             int months,
+        //[InlineData(10000, 60, 5, PaymentFrequency.Monthly, 193.33)]
+        [InlineData(39176.00, 84, 3.79, PaymentFrequency.Monthly, 531.71)]
+        [InlineData(39176.00, 182, 3.79, PaymentFrequency.BiWeekly, 245.22)]
+        public void CalculatePayment_ValidInput_ShouldSucceed(double mortgageAmount,
+             int periods,
              double interestRate,
-             double expectedMonthlyPayment)
+             PaymentFrequency paymentFrequency,
+             double expectedPayment)
         {
-            //// Arrange
+            // Arrange
 
-            //// Act
-            //var response = _service.CalculatePayment(mortgageAmount, months, interestRate);
+            // Act
+            var response = _service.CalculatePayment(mortgageAmount, periods, interestRate, paymentFrequency);
 
-            //// Assert
-            //response.Should().NotBe(null);
-            //response.Should().Be(expectedMonthlyPayment);
+            // Assert
+            response.Should().NotBe(null);
+            response.Should().Be(expectedPayment);
         }
 
         [Theory]
@@ -91,7 +95,7 @@ namespace Calculator.Services.Tests
             // Arrange
 
             // Act
-            var response = _service.TotalPeriod(years, months, paymentFrequency);
+            var response = MortgageService.TotalPeriod(years, months, paymentFrequency);
 
             // Assert
             response.Should().NotBe(null);
@@ -116,7 +120,7 @@ namespace Calculator.Services.Tests
             // Arrange
 
             // Act
-            var response = _service.CalculateInterestRate(interestRate, paymentFrequency);
+            var response = MortgageService.CalculateInterestRate(interestRate, paymentFrequency);
 
             // Assert
             response.Should().NotBe(null);

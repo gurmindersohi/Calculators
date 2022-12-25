@@ -54,7 +54,8 @@ namespace Calculator.Services
 
             var rate = CalculateInterestRate(interestRate, paymentFrequency);
 
-            return rate / (1 - Math.Pow((1 + rate), -(periods))) * mortgageAmount;
+            var payment = rate / (1 - Math.Pow((1 + rate), -(periods))) * mortgageAmount;
+            return Math.Round(payment, 2);
         }
 
         private static double CalculateTotalAmount(double monthlyPayment, int months)
@@ -73,7 +74,7 @@ namespace Calculator.Services
             return monthlyInterest;
         }
 
-        public int TotalPeriod(int years, int months, PaymentFrequency paymentFrequency)
+        public static int TotalPeriod(int years, int months, PaymentFrequency paymentFrequency)
         {
             decimal totalMonths = months + (years * 12);
             var periods = decimal.MinValue;
@@ -99,7 +100,7 @@ namespace Calculator.Services
             return Convert.ToInt32(periods);
         }
 
-        public double CalculateInterestRate(double interestRate, PaymentFrequency paymentFrequency)
+        public static double CalculateInterestRate(double interestRate, PaymentFrequency paymentFrequency)
         {
             var rate = interestRate / 100;
             switch (paymentFrequency)
