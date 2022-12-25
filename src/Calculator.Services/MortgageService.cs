@@ -99,18 +99,19 @@ namespace Calculator.Services
             return Convert.ToInt32(periods);
         }
 
-        private static double CalculateInterestRate(double interestRate, PaymentFrequency paymentFrequency)
+        public double CalculateInterestRate(double interestRate, PaymentFrequency paymentFrequency)
         {
+            var rate = interestRate / 100;
             switch (paymentFrequency)
             {
                 case PaymentFrequency.Monthly:
-                    return (interestRate / 100) / 12;
+                    return rate / 12;
                 case PaymentFrequency.SemiMonthly:
-                    return (interestRate / 100) / 24;
+                    return rate / 24;
                 case PaymentFrequency.BiWeekly:
-                    return (interestRate / 100) / 26;
+                    return rate / 26;
                 case PaymentFrequency.Weekly:
-                    return (interestRate / 100) / 52;
+                    return rate / 52;
                 default:
                     return 0;
             }

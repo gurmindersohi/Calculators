@@ -81,6 +81,8 @@ namespace Calculator.Services.Tests
         [InlineData(10, 6, PaymentFrequency.SemiMonthly, 252)]
         [InlineData(10, 0, PaymentFrequency.BiWeekly, 260)]
         [InlineData(10, 6, PaymentFrequency.BiWeekly, 273)]
+        [InlineData(10, 0, PaymentFrequency.Weekly, 520)]
+        [InlineData(10, 6, PaymentFrequency.Weekly, 546)]
         public void TotalPeriod_ValidInput_ShouldSucceed(int years,
              int months,
              PaymentFrequency paymentFrequency,
@@ -94,6 +96,31 @@ namespace Calculator.Services.Tests
             // Assert
             response.Should().NotBe(null);
             response.Should().Be(expectedTotalPeriod);
+        }
+
+        [Theory]
+        [InlineData(0, PaymentFrequency.Monthly, 0)]
+        [InlineData(0.49, PaymentFrequency.Monthly, 0.0004083333333333333)]
+        [InlineData(10, PaymentFrequency.Monthly, 0.008333333333333333)]
+        [InlineData(3.79, PaymentFrequency.Monthly, 0.0031583333333333337)]
+        [InlineData(10, PaymentFrequency.SemiMonthly, 0.0041666666666666666)]
+        [InlineData(3.79, PaymentFrequency.SemiMonthly, 0.0015791666666666669)]
+        [InlineData(10, PaymentFrequency.BiWeekly, 0.0038461538461538464)]
+        [InlineData(3.79, PaymentFrequency.BiWeekly, 0.0014576923076923078)]
+        [InlineData(10, PaymentFrequency.Weekly, 0.0019230769230769232)]
+        [InlineData(3.79, PaymentFrequency.Weekly, 0.0007288461538461539)]
+        public void CalculateInterestRate_ValidInput_ShouldSucceed(double interestRate,
+             PaymentFrequency paymentFrequency,
+             double expectedInterestRate)
+        {
+            // Arrange
+
+            // Act
+            var response = _service.CalculateInterestRate(interestRate, paymentFrequency);
+
+            // Assert
+            response.Should().NotBe(null);
+            response.Should().Be(expectedInterestRate);
         }
 
         //[Theory]
