@@ -24,9 +24,15 @@ namespace Calculator.Services.Tests
         }
 
         [Theory]
-        [InlineData(1000, 2, 6, PaymentFrequency.BiWeekly, 10, 18.90, 30.07, 39089.57, 339089.57)]
-        [InlineData(1000, 2, 0, PaymentFrequency.BiWeekly, 10, 17.10, 30.07, 39089.57, 339089.57)]
         [InlineData(39176.00, 7, 0, PaymentFrequency.Monthly, 3.79, 531.71, 65.33, 5487.64, 44663.64)]
+        [InlineData(300000, 25, 0, PaymentFrequency.Monthly, 1, 1130.62, 130.62, 39186.0, 339186.0)]
+        [InlineData(300000, 25, 6, PaymentFrequency.Monthly, 1, 1111.11, 130.72, 39999.66, 339999.66)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.SemiMonthly, 3.79, 265.67, 32.48, 5456.56, 44632.56)]
+        [InlineData(300000, 25, 0, PaymentFrequency.SemiMonthly, 1, 565.21, 65.21, 39126.0, 339126.0)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.BiWeekly, 3.79, 245.22, 29.97, 5454.04, 44630.04)]
+        [InlineData(300000, 25, 0, PaymentFrequency.BiWeekly, 1, 521.72, 60.18, 39118.0, 339118.0)]
+        [InlineData(39176.00, 7, 0, PaymentFrequency.Weekly, 3.79, 122.57, 14.94, 5439.48, 44615.48)]
+        [InlineData(300000, 25, 0, PaymentFrequency.Weekly, 1, 260.84, 30.07, 39092.0, 339092.0)]
         public void CalculateLoan_ValidInput_ShouldSucceed(double mortgageAmount,
              int years,
              int months,
@@ -126,46 +132,5 @@ namespace Calculator.Services.Tests
             response.Should().NotBe(null);
             response.Should().Be(expectedInterestRate);
         }
-
-        //[Theory]
-        //[InlineData(39176.00, 7, 0, PaymentFrequency.Monthly, 3.79, 531.71, 65.33, 5487.68, 44663.68)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.Monthly, 1, 1130.62, 130.62, 39185.21, 339185.21)]
-        //[InlineData(300000, 25, 6, PaymentFrequency.Monthly, 1, 1111.11, 130.71, 39998.17, 339998.17)]
-        //[InlineData(39176.00, 7, 0, PaymentFrequency.SemiMonthly, 3.79, 265.67, 32.48, 5456.95, 44632.95)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.SemiMonthly, 1, 565.21, 65.21, 39123.05, 339123.05)]
-        //[InlineData(39176.00, 7, 0, PaymentFrequency.BiWeekly, 3.79, 245.22, 29.97, 5454.59, 44630.59)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.BiWeekly, 1, 521.72, 60.18, 39118.26, 339118.26)]
-        //[InlineData(39176.00, 7, 0, PaymentFrequency.Weekly, 3.79, 122.57, 14.95, 5440.4, 44616.4)]
-        //[InlineData(300000, 25, 0, PaymentFrequency.Weekly, 1, 260.84, 30.07, 39089.57, 339089.57)]
-        //public void CalculateLoan_ValidInput_ShouldSucceed(double mortgageAmount,
-        //     int years,
-        //     int months,
-        //     PaymentFrequency paymentFrequency,
-        //     double interestRate,
-        //     double expectedMonthlyPayment,
-        //     double expectedMonthlyInterest,
-        //     double expectedTotalInterest,
-        //     double expectedTotalAmount)
-        //{
-        //    // Arrange
-        //    var item = new MortgageDto()
-        //    {
-        //        MortgageAmount = mortgageAmount,
-        //        Years = years,
-        //        Months = months,
-        //        PaymentFrequency = paymentFrequency,
-        //        InterestRate = interestRate,
-        //    };
-
-        //    // Act
-        //    var response = _service.CalculateMortgage(item);
-
-        //    // Assert
-        //    response.Success.Should().Be(true);
-        //    response.ResponseDto.Payment.Should().Be(expectedMonthlyPayment);
-        //    response.ResponseDto.Interest.Should().Be(expectedMonthlyInterest);
-        //    response.ResponseDto.TotalInterest.Should().Be(expectedTotalInterest);
-        //    response.ResponseDto.TotalAmount.Should().Be(expectedTotalAmount);
-        //}
     }
 }

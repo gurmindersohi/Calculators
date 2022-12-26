@@ -22,7 +22,6 @@ namespace Calculator.Services
         {
             try
             {
-                // Period should be 65 but it is 52 Biweekly 2 year 6 monts test.
                 var period = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
                 var monthlyPayment = CalculatePayment(mortgageDto.MortgageAmount, period, mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
                 var totalAmount = CalculateTotalAmount(monthlyPayment, period);
