@@ -8,6 +8,7 @@ namespace Calculator.Services
     using Calculator.Abstractions.Services;
     using Calculator.DataTransferModels.Enums;
     using Calculator.DataTransferModels.Mortgage;
+    using static System.Runtime.InteropServices.JavaScript.JSType;
 
     /// <summary>
     /// Interace defining the methods the mortgage service contains.
@@ -21,16 +22,16 @@ namespace Calculator.Services
         {
             try
             {
-                var periods = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
-                var interestRate = CalculateInterestRate(mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
-                var payment = CalculatePayment(mortgageDto.MortgageAmount, periods, interestRate);
-                var totalAmount = CalculateTotalAmount(payment, periods);
+                // Period should be 65 but it is 52 Biweekly 2 year 6 monts test.
+                var period = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
+                var monthlyPayment = CalculatePayment(mortgageDto.MortgageAmount, period, mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
+                var totalAmount = CalculateTotalAmount(monthlyPayment, period);
                 var totalInterest = CalculateTotalInterest(totalAmount, mortgageDto.MortgageAmount);
-                var monthlyInterest = CalculateMonthlyInterest(totalInterest, periods);
+                var monthlyInterest = CalculateMonthlyInterest(totalInterest, period);
 
                 var response = new ResponseDto()
                 {
-                    Payment = Math.Round(payment, 2),
+                    Payment = Math.Round(monthlyPayment, 2),
                     Interest = Math.Round(monthlyInterest, 2),
                     TotalInterest = Math.Round(totalInterest, 2),
                     TotalAmount = Math.Round(totalAmount, 2),
@@ -44,14 +45,17 @@ namespace Calculator.Services
             }
         }
 
-        private static double CalculatePayment(double mortgageAmount, int periods, double interestRate)
+        public double CalculatePayment(double mortgageAmount, int periods, double interestRate, PaymentFrequency paymentFrequency)
         {
             if (interestRate == 0)
             {
                 return mortgageAmount / periods;
             }
 
-            return interestRate / (1 - Math.Pow((1 + interestRate), -(periods))) * mortgageAmount;
+            var rate = CalculateInterestRate(interestRate, paymentFrequency);
+
+            var payment = rate / (1 - Math.Pow((1 + rate), -(periods))) * mortgageAmount;
+            return Math.Round(payment, 2);
         }
 
         private static double CalculateTotalAmount(double monthlyPayment, int months)
@@ -70,36 +74,45 @@ namespace Calculator.Services
             return monthlyInterest;
         }
 
-        private static int TotalPeriod(int year, int months, PaymentFrequency paymentFrequency)
+        public static int TotalPeriod(int years, int months, PaymentFrequency paymentFrequency)
         {
-            var totalMonths = months + (year * 12);
+            decimal totalMonths = months + (years * 12);
+            var periods = decimal.MinValue;
             switch (paymentFrequency)
             {
                 case PaymentFrequency.Monthly:
-                    return totalMonths;
+                    periods = totalMonths;
+                    break;
                 case PaymentFrequency.SemiMonthly:
-                    return totalMonths * 2;
+                    periods = totalMonths * 2;
+                    break;
                 case PaymentFrequency.BiWeekly:
-                    return (totalMonths / 12) * 26;
+                    periods = totalMonths / 12 * 26;
+                    break;
                 case PaymentFrequency.Weekly:
-                    return (totalMonths / 12) * 52;
+                    periods = (totalMonths / 12) * 52;
+                    break;
                 default:
-                    return 0;
+                    periods = 0;
+                    break;
             }
+
+            return Convert.ToInt32(periods);
         }
 
-        private static double CalculateInterestRate(double interestRate, PaymentFrequency paymentFrequency)
+        public static double CalculateInterestRate(double interestRate, PaymentFrequency paymentFrequency)
         {
+            var rate = interestRate / 100;
             switch (paymentFrequency)
             {
                 case PaymentFrequency.Monthly:
-                    return (interestRate / 100) / 12;
+                    return rate / 12;
                 case PaymentFrequency.SemiMonthly:
-                    return (interestRate / 100) / 24;
+                    return rate / 24;
                 case PaymentFrequency.BiWeekly:
-                    return (interestRate / 100) / 26;
+                    return rate / 26;
                 case PaymentFrequency.Weekly:
-                    return (interestRate / 100) / 52;
+                    return rate / 52;
                 default:
                     return 0;
             }
