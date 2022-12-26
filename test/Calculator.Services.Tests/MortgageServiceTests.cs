@@ -33,7 +33,7 @@ namespace Calculator.Services.Tests
         [InlineData(300000, 25, 0, PaymentFrequency.BiWeekly, 1, 521.72, 60.18, 39118.0, 339118.0)]
         [InlineData(39176.00, 7, 0, PaymentFrequency.Weekly, 3.79, 122.57, 14.94, 5439.48, 44615.48)]
         [InlineData(300000, 25, 0, PaymentFrequency.Weekly, 1, 260.84, 30.07, 39092.0, 339092.0)]
-        public void CalculateLoan_ValidInput_ShouldSucceed(double mortgageAmount,
+        public void CalculateMortgage_ValidInput_ShouldSucceed(double mortgageAmount,
              int years,
              int months,
              PaymentFrequency paymentFrequency,

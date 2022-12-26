@@ -22,16 +22,16 @@ namespace Calculator.Services
         {
             try
             {
-                var period = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
-                var monthlyPayment = CalculatePayment(mortgageDto.MortgageAmount, period, mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
-                var totalAmount = CalculateTotalAmount(monthlyPayment, period);
+                var periods = TotalPeriod(mortgageDto.Years, mortgageDto.Months, mortgageDto.PaymentFrequency);
+                var payment = CalculatePayment(mortgageDto.MortgageAmount, periods, mortgageDto.InterestRate, mortgageDto.PaymentFrequency);
+                var totalAmount = CalculateTotalAmount(payment, periods);
                 var totalInterest = CalculateTotalInterest(totalAmount, mortgageDto.MortgageAmount);
-                var monthlyInterest = CalculateMonthlyInterest(totalInterest, period);
+                var interest = CalculateInterest(totalInterest, periods);
 
                 var response = new ResponseDto()
                 {
-                    Payment = Math.Round(monthlyPayment, 2),
-                    Interest = Math.Round(monthlyInterest, 2),
+                    Payment = Math.Round(payment, 2),
+                    Interest = Math.Round(interest, 2),
                     TotalInterest = Math.Round(totalInterest, 2),
                     TotalAmount = Math.Round(totalAmount, 2),
                 };
@@ -57,9 +57,9 @@ namespace Calculator.Services
             return Math.Round(payment, 2);
         }
 
-        private static double CalculateTotalAmount(double monthlyPayment, int months)
+        private static double CalculateTotalAmount(double payment, int periods)
         {
-            return monthlyPayment * months;
+            return payment * periods;
         }
 
         private static double CalculateTotalInterest(double totalAmount, double mortgageAmount)
@@ -67,10 +67,10 @@ namespace Calculator.Services
             return totalAmount - mortgageAmount;
         }
 
-        private static double CalculateMonthlyInterest(double totalInterest, int months)
+        private static double CalculateInterest(double totalInterest, int periods)
         {
-            var monthlyInterest = totalInterest / months;
-            return monthlyInterest;
+            var interest = totalInterest / periods;
+            return interest;
         }
 
         public static int TotalPeriod(int years, int months, PaymentFrequency paymentFrequency)
