@@ -38,4 +38,3 @@ namespace Calculator.DataTransferModels.Enums
         Weekly
     }
 }
-

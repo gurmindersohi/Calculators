@@ -30,4 +30,3 @@ namespace Calculator.DataTransferModels.Mortgage
         public double TotalAmount { get; set; }
     }
 }
-

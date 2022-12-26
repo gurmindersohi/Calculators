@@ -47,4 +47,3 @@ namespace Calculator.DataTransferModels.Mortgage
         public double InterestRate { get; set; }
     }
 }
-
