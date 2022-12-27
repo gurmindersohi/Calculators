@@ -24,6 +24,7 @@ namespace Calculator.Services.Tests
         }
 
         [Theory]
+        [InlineData(400000.00, 25, 0, PaymentFrequency.Monthly, 0.5, 1418.68, 85.35, 25604.00, 425604.00)]
         [InlineData(39176.00, 7, 0, PaymentFrequency.Monthly, 3.79, 531.71, 65.33, 5487.64, 44663.64)]
         [InlineData(300000, 25, 0, PaymentFrequency.Monthly, 1, 1130.62, 130.62, 39186.0, 339186.0)]
         [InlineData(300000, 25, 6, PaymentFrequency.Monthly, 1, 1111.11, 130.72, 39999.66, 339999.66)]

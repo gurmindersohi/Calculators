@@ -46,10 +46,10 @@ namespace Calculator.Mortgage.ViewModels
         double? rate;
 
         [ObservableProperty]
-        int? years;
+        string years;
 
         [ObservableProperty]
-        int? months;
+        string months;
 
         [ObservableProperty]
         int paymentFrequency = 0;
@@ -57,11 +57,14 @@ namespace Calculator.Mortgage.ViewModels
         [RelayCommand]
         void CalculateLoan()
         {
+            int numberOfYears = int.TryParse(years, out numberOfYears) ? numberOfYears : 0;
+            int numberOfMonths = int.TryParse(months, out numberOfMonths) ? numberOfMonths : 0;
+
             var mortgageDto = new MortgageDto()
             {
                 MortgageAmount = Amount ?? 0,
-                Years = years ?? 0,
-                Months = months ?? 0,
+                Years = numberOfYears,
+                Months = numberOfMonths,
                 PaymentFrequency = (PaymentFrequency)paymentFrequency,
                 InterestRate = rate ?? 0
             };
